@@ -1,0 +1,1668 @@
+{
+  "meta": {
+    "lang": "Internacional",
+    "glossLang": "en",
+    "source": "Gramática Internacional (Campos Lima, 1948)",
+    "version": "1.1",
+    "type": "Swadesh List 207",
+    "notes": "IDs textuales; vocabulario basato in lo texto o derivato de radices latinas"
+  },
+  "entries": [
+    {
+      "id": "ego",
+      "headword": "ego",
+      "pos": "pron",
+      "pron": "/ˈe.go/",
+      "defs": [{ "gloss": "I", "notes": "1st sg" }],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tu",
+      "headword": "tu",
+      "pos": "pron",
+      "pron": "/tu/",
+      "defs": [{ "gloss": "you (singular)", "notes": "2nd sg" }],
+      "tags": ["basic"]
+    },
+    {
+      "id": "ele",
+      "headword": "ele",
+      "pos": "pron",
+      "pron": "/ˈe.le/",
+      "defs": [{ "gloss": "he", "notes": "3rd sg masc" }],
+      "tags": ["basic"]
+    },
+    {
+      "id": "nos",
+      "headword": "nos",
+      "pos": "pron",
+      "pron": "/nos/",
+      "defs": [{ "gloss": "we", "notes": "1st pl" }],
+      "tags": ["basic"]
+    },
+    {
+      "id": "vos",
+      "headword": "vos",
+      "pos": "pron",
+      "pron": "/vos/",
+      "defs": [{ "gloss": "you (plural)", "notes": "2nd pl" }],
+      "tags": ["basic"]
+    },
+    {
+      "id": "eles",
+      "headword": "eles",
+      "pos": "pron",
+      "pron": "/ˈe.les/",
+      "defs": [{ "gloss": "they", "notes": "3rd pl" }],
+      "tags": ["basic"]
+    },
+    {
+      "id": "esto",
+      "headword": "esto",
+      "pos": "pron",
+      "pron": "/ˈes.to/",
+      "defs": [{ "gloss": "this", "notes": "demonstrative" }],
+      "tags": ["basic"]
+    },
+    {
+      "id": "esso",
+      "headword": "esso",
+      "pos": "pron",
+      "pron": "/ˈes.so/",
+      "defs": [{ "gloss": "that", "notes": "demonstrative" }],
+      "tags": ["basic"]
+    },
+    {
+      "id": "aqui",
+      "headword": "aqui",
+      "pos": "adv",
+      "pron": "/a.ˈkwi/",
+      "defs": [{ "gloss": "here", "notes": "location" }],
+      "tags": ["location"]
+    },
+    {
+      "id": "ali",
+      "headword": "ali",
+      "pos": "adv",
+      "pron": "/a.ˈli/",
+      "defs": [{ "gloss": "there", "notes": "location" }],
+      "tags": ["location"]
+    },
+    {
+      "id": "qui",
+      "headword": "qui",
+      "pos": "pron",
+      "pron": "/kwi/",
+      "defs": [{ "gloss": "who", "notes": "interrogative" }],
+      "tags": ["question"]
+    },
+    {
+      "id": "que",
+      "headword": "que",
+      "pos": "pron",
+      "pron": "/ke/",
+      "defs": [{ "gloss": "what", "notes": "interrogative" }],
+      "tags": ["question"]
+    },
+    {
+      "id": "ubi",
+      "headword": "úbi",
+      "pos": "adv",
+      "pron": "/ˈu.bi/",
+      "defs": [{ "gloss": "where", "notes": "interrogative" }],
+      "tags": ["question"]
+    },
+    {
+      "id": "quando",
+      "headword": "quando",
+      "pos": "adv",
+      "pron": "/ˈkwan.do/",
+      "defs": [{ "gloss": "when", "notes": "interrogative" }],
+      "tags": ["question"]
+    },
+    {
+      "id": "como",
+      "headword": "como",
+      "pos": "adv",
+      "pron": "/ˈko.mo/",
+      "defs": [{ "gloss": "how", "notes": "interrogative" }],
+      "tags": ["question"]
+    },
+    {
+      "id": "non",
+      "headword": "non",
+      "pos": "part",
+      "pron": "/non/",
+      "defs": [{ "gloss": "not", "notes": "negation" }],
+      "tags": ["basic"]
+    },
+    {
+      "id": "toto",
+      "headword": "toto",
+      "pos": "adj",
+      "pron": "/ˈto.to/",
+      "defs": [{ "gloss": "all", "notes": "quantifier" }],
+      "tags": ["quantity"]
+    },
+    {
+      "id": "multos",
+      "headword": "multos",
+      "pos": "adj",
+      "pron": "/ˈmul.tos/",
+      "defs": [{ "gloss": "many", "notes": "quantifier" }],
+      "tags": ["quantity"]
+    },
+    {
+      "id": "alcunos",
+      "headword": "alcunos",
+      "pos": "adj",
+      "pron": "/al.ˈku.nos/",
+      "defs": [{ "gloss": "some", "notes": "quantifier" }],
+      "tags": ["quantity"]
+    },
+    {
+      "id": "pocos",
+      "headword": "pocos",
+      "pos": "adj",
+      "pron": "/ˈpo.kos/",
+      "defs": [{ "gloss": "few", "notes": "quantifier" }],
+      "tags": ["quantity"]
+    },
+    {
+      "id": "altro",
+      "headword": "altro",
+      "pos": "adj",
+      "pron": "/ˈal.tro/",
+      "defs": [{ "gloss": "other", "notes": "" }],
+      "tags": ["basic"]
+    },
+    {
+      "id": "uno",
+      "headword": "uno",
+      "pos": "num",
+      "pron": "/ˈu.no/",
+      "defs": [{ "gloss": "one", "notes": "number" }],
+      "tags": ["number"]
+    },
+    {
+      "id": "duos",
+      "headword": "duos",
+      "pos": "num",
+      "pron": "/ˈdwos/",
+      "defs": [{ "gloss": "two", "notes": "number" }],
+      "tags": ["number"]
+    },
+    {
+      "id": "tres",
+      "headword": "tres",
+      "pos": "num",
+      "pron": "/tres/",
+      "defs": [{ "gloss": "three", "notes": "number" }],
+      "tags": ["number"]
+    },
+    {
+      "id": "quatro",
+      "headword": "quatro",
+      "pos": "num",
+      "pron": "/ˈkwa.tro/",
+      "defs": [{ "gloss": "four", "notes": "number" }],
+      "tags": ["number"]
+    },
+    {
+      "id": "quinque",
+      "headword": "quinque",
+      "pos": "num",
+      "pron": "/ˈkwin.kwe/",
+      "defs": [{ "gloss": "five", "notes": "number" }],
+      "tags": ["number"]
+    },
+    {
+      "id": "grande",
+      "headword": "grande",
+      "pos": "adj",
+      "pron": "/ˈgran.de/",
+      "defs": [{ "gloss": "big", "notes": "size" }],
+      "tags": ["size"]
+    },
+    {
+      "id": "longo",
+      "headword": "longo",
+      "pos": "adj",
+      "pron": "/ˈlon.go/",
+      "defs": [{ "gloss": "long", "notes": "size" }],
+      "tags": ["size"]
+    },
+    {
+      "id": "largo",
+      "headword": "largo",
+      "pos": "adj",
+      "pron": "/ˈlar.go/",
+      "defs": [{ "gloss": "wide", "notes": "size" }],
+      "tags": ["size"]
+    },
+    {
+      "id": "spesso",
+      "headword": "spesso",
+      "pos": "adj",
+      "pron": "/ˈspes.so/",
+      "defs": [{ "gloss": "thick", "notes": "dimension" }],
+      "tags": ["size"]
+    },
+    {
+      "id": "pesante",
+      "headword": "pesante",
+      "pos": "adj",
+      "pron": "/pe.ˈzan.te/",
+      "defs": [{ "gloss": "heavy", "notes": "weight" }],
+      "tags": ["property"]
+    },
+    {
+      "id": "picolo",
+      "headword": "pícolo",
+      "pos": "adj",
+      "pron": "/ˈpi.ko.lo/",
+      "defs": [{ "gloss": "small", "notes": "size" }],
+      "tags": ["size"]
+    },
+    {
+      "id": "curto",
+      "headword": "curto",
+      "pos": "adj",
+      "pron": "/ˈkur.to/",
+      "defs": [{ "gloss": "short", "notes": "size" }],
+      "tags": ["size"]
+    },
+    {
+      "id": "stricto",
+      "headword": "stricto",
+      "pos": "adj",
+      "pron": "/ˈstrik.to/",
+      "defs": [{ "gloss": "narrow", "notes": "dimension" }],
+      "tags": ["size"]
+    },
+    {
+      "id": "tenue",
+      "headword": "tenue",
+      "pos": "adj",
+      "pron": "/ˈte.nwe/",
+      "defs": [{ "gloss": "thin", "notes": "dimension" }],
+      "tags": ["size"]
+    },
+    {
+      "id": "mulier",
+      "headword": "mulier",
+      "pos": "n",
+      "pron": "/mu.ˈli.er/",
+      "defs": [{ "gloss": "woman", "notes": "person" }],
+      "tags": ["person"]
+    },
+    {
+      "id": "homo",
+      "headword": "homo",
+      "pos": "n",
+      "pron": "/ˈo.mo/",
+      "defs": [{ "gloss": "man", "notes": "male adult / human" }],
+      "tags": ["person"]
+    },
+    {
+      "id": "humano",
+      "headword": "humano",
+      "pos": "n",
+      "pron": "/u.ˈma.no/",
+      "defs": [{ "gloss": "human", "notes": "species" }],
+      "tags": ["person"]
+    },
+    {
+      "id": "infante",
+      "headword": "infante",
+      "pos": "n",
+      "pron": "/in.ˈfan.te/",
+      "defs": [{ "gloss": "child", "notes": "person" }],
+      "tags": ["person"]
+    },
+    {
+      "id": "uxor",
+      "headword": "uxor",
+      "pos": "n",
+      "pron": "/ˈuk.sor/",
+      "defs": [{ "gloss": "wife", "notes": "family" }],
+      "tags": ["family"]
+    },
+    {
+      "id": "marito",
+      "headword": "marito",
+      "pos": "n",
+      "pron": "/ma.ˈri.to/",
+      "defs": [{ "gloss": "husband", "notes": "family" }],
+      "tags": ["family"]
+    },
+    {
+      "id": "matre",
+      "headword": "matre",
+      "pos": "n",
+      "pron": "/ˈma.tre/",
+      "defs": [{ "gloss": "mother", "notes": "family" }],
+      "tags": ["family"]
+    },
+    {
+      "id": "pater",
+      "headword": "páter",
+      "pos": "n",
+      "pron": "/ˈpa.ter/",
+      "defs": [{ "gloss": "father", "notes": "family" }],
+      "tags": ["family"]
+    },
+    {
+      "id": "animal",
+      "headword": "animal",
+      "pos": "n",
+      "pron": "/a.ni.ˈmal/",
+      "defs": [{ "gloss": "animal", "notes": "nature" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "pisce",
+      "headword": "pisce",
+      "pos": "n",
+      "pron": "/ˈpis.tse/",
+      "defs": [{ "gloss": "fish", "notes": "animal" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "ave",
+      "headword": "ave",
+      "pos": "n",
+      "pron": "/ˈa.ve/",
+      "defs": [{ "gloss": "bird", "notes": "animal" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "cane",
+      "headword": "cane",
+      "pos": "n",
+      "pron": "/ˈka.ne/",
+      "defs": [{ "gloss": "dog", "notes": "animal" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "pediculo",
+      "headword": "pedículo",
+      "pos": "n",
+      "pron": "/pe.ˈdi.ku.lo/",
+      "defs": [{ "gloss": "louse", "notes": "animal" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "serpente",
+      "headword": "serpente",
+      "pos": "n",
+      "pron": "/ser.ˈpen.te/",
+      "defs": [{ "gloss": "snake", "notes": "animal" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "verme",
+      "headword": "verme",
+      "pos": "n",
+      "pron": "/ˈver.me/",
+      "defs": [{ "gloss": "worm", "notes": "animal" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "arbore",
+      "headword": "árbore",
+      "pos": "n",
+      "pron": "/ˈar.bo.re/",
+      "defs": [{ "gloss": "tree", "notes": "plant" }],
+      "tags": ["plant"]
+    },
+    {
+      "id": "selva",
+      "headword": "selva",
+      "pos": "n",
+      "pron": "/ˈsel.va/",
+      "defs": [{ "gloss": "forest", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "baculo",
+      "headword": "baculo",
+      "pos": "n",
+      "pron": "/ˈba.ku.lo/",
+      "defs": [{ "gloss": "stick", "notes": "object" }],
+      "tags": ["object"]
+    },
+    {
+      "id": "fructo",
+      "headword": "fructo",
+      "pos": "n",
+      "pron": "/ˈfruk.to/",
+      "defs": [{ "gloss": "fruit", "notes": "food" }],
+      "tags": ["food"]
+    },
+    {
+      "id": "semente",
+      "headword": "semente",
+      "pos": "n",
+      "pron": "/se.ˈmen.te/",
+      "defs": [{ "gloss": "seed", "notes": "plant" }],
+      "tags": ["plant"]
+    },
+    {
+      "id": "folia",
+      "headword": "fólia",
+      "pos": "n",
+      "pron": "/ˈfo.li.a/",
+      "defs": [{ "gloss": "leaf", "notes": "plant" }],
+      "tags": ["plant"]
+    },
+    {
+      "id": "radice",
+      "headword": "radice",
+      "pos": "n",
+      "pron": "/ra.ˈdi.tse/",
+      "defs": [{ "gloss": "root", "notes": "plant" }],
+      "tags": ["plant"]
+    },
+    {
+      "id": "cortex",
+      "headword": "córtex",
+      "pos": "n",
+      "pron": "/ˈkor.teks/",
+      "defs": [{ "gloss": "bark", "notes": "plant" }],
+      "tags": ["plant"]
+    },
+    {
+      "id": "flor",
+      "headword": "flor",
+      "pos": "n",
+      "pron": "/flor/",
+      "defs": [{ "gloss": "flower", "notes": "plant" }],
+      "tags": ["plant"]
+    },
+    {
+      "id": "herba",
+      "headword": "herba",
+      "pos": "n",
+      "pron": "/ˈer.ba/",
+      "defs": [{ "gloss": "grass", "notes": "plant" }],
+      "tags": ["plant"]
+    },
+    {
+      "id": "corda",
+      "headword": "corda",
+      "pos": "n",
+      "pron": "/ˈkor.da/",
+      "defs": [{ "gloss": "rope", "notes": "object" }],
+      "tags": ["object"]
+    },
+    {
+      "id": "pele",
+      "headword": "pele",
+      "pos": "n",
+      "pron": "/ˈpe.le/",
+      "defs": [{ "gloss": "skin", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "carne",
+      "headword": "carne",
+      "pos": "n",
+      "pron": "/ˈcar.ne/",
+      "defs": [{ "gloss": "meat", "notes": "food" }],
+      "tags": ["food"]
+    },
+    {
+      "id": "sangue",
+      "headword": "sangue",
+      "pos": "n",
+      "pron": "/ˈsan.gwe/",
+      "defs": [{ "gloss": "blood", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "osso",
+      "headword": "osso",
+      "pos": "n",
+      "pron": "/ˈos.so/",
+      "defs": [{ "gloss": "bone", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "gordura",
+      "headword": "gordura",
+      "pos": "n",
+      "pron": "/gor.ˈdu.ra/",
+      "defs": [{ "gloss": "fat", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "ovo",
+      "headword": "ovo",
+      "pos": "n",
+      "pron": "/ˈo.vo/",
+      "defs": [{ "gloss": "egg", "notes": "food" }],
+      "tags": ["food"]
+    },
+    {
+      "id": "corno",
+      "headword": "corno",
+      "pos": "n",
+      "pron": "/ˈkor.no/",
+      "defs": [{ "gloss": "horn", "notes": "animal" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "cauda",
+      "headword": "cauda",
+      "pos": "n",
+      "pron": "/ˈkau.da/",
+      "defs": [{ "gloss": "tail", "notes": "animal" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "pluma",
+      "headword": "pluma",
+      "pos": "n",
+      "pron": "/ˈplu.ma/",
+      "defs": [{ "gloss": "feather", "notes": "animal" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "capilo",
+      "headword": "capilo",
+      "pos": "n",
+      "pron": "/ka.ˈpi.lo/",
+      "defs": [{ "gloss": "hair", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "capo",
+      "headword": "capo",
+      "pos": "n",
+      "pron": "/ˈka.po/",
+      "defs": [{ "gloss": "head", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "orelia",
+      "headword": "orélia",
+      "pos": "n",
+      "pron": "/o.ˈre.li.a/",
+      "defs": [{ "gloss": "ear", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "oculo",
+      "headword": "óculo",
+      "pos": "n",
+      "pron": "/ˈo.ku.lo/",
+      "defs": [{ "gloss": "eye", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "naso",
+      "headword": "naso",
+      "pos": "n",
+      "pron": "/ˈna.zo/",
+      "defs": [{ "gloss": "nose", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "boca",
+      "headword": "boca",
+      "pos": "n",
+      "pron": "/ˈbo.ka/",
+      "defs": [{ "gloss": "mouth", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "dente",
+      "headword": "dente",
+      "pos": "n",
+      "pron": "/ˈden.te/",
+      "defs": [{ "gloss": "tooth", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "lingua",
+      "headword": "língua",
+      "pos": "n",
+      "pron": "/ˈlin.gwa/",
+      "defs": [{ "gloss": "tongue", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "ungula",
+      "headword": "ungula",
+      "pos": "n",
+      "pron": "/ˈun.gu.la/",
+      "defs": [{ "gloss": "fingernail", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "pede",
+      "headword": "pede",
+      "pos": "n",
+      "pron": "/ˈpe.de/",
+      "defs": [{ "gloss": "foot", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "gamba",
+      "headword": "gamba",
+      "pos": "n",
+      "pron": "/ˈgam.ba/",
+      "defs": [{ "gloss": "leg", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "genu",
+      "headword": "genu",
+      "pos": "n",
+      "pron": "/ˈje.nu/",
+      "defs": [{ "gloss": "knee", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "mano",
+      "headword": "mano",
+      "pos": "n",
+      "pron": "/ˈma.no/",
+      "defs": [{ "gloss": "hand", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "ala",
+      "headword": "ala",
+      "pos": "n",
+      "pron": "/ˈa.la/",
+      "defs": [{ "gloss": "wing", "notes": "animal" }],
+      "tags": ["animal"]
+    },
+    {
+      "id": "ventre",
+      "headword": "ventre",
+      "pos": "n",
+      "pron": "/ˈven.tre/",
+      "defs": [{ "gloss": "belly", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "intestinos",
+      "headword": "intestinos",
+      "pos": "n",
+      "pron": "/in.tes.ˈti.nos/",
+      "defs": [{ "gloss": "guts", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "colo",
+      "headword": "colo",
+      "pos": "n",
+      "pron": "/ˈko.lo/",
+      "defs": [{ "gloss": "neck", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "dorso",
+      "headword": "dorso",
+      "pos": "n",
+      "pron": "/ˈdor.so/",
+      "defs": [{ "gloss": "back", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "pectino",
+      "headword": "pectino",
+      "pos": "n",
+      "pron": "/pek.ˈti.no/",
+      "defs": [{ "gloss": "breast", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "cordie",
+      "headword": "córdie",
+      "pos": "n",
+      "pron": "/ˈkor.di.e/",
+      "defs": [{ "gloss": "heart", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "ficato",
+      "headword": "fícato",
+      "pos": "n",
+      "pron": "/ˈfi.ka.to/",
+      "defs": [{ "gloss": "liver", "notes": "body" }],
+      "tags": ["body"]
+    },
+    {
+      "id": "biber",
+      "headword": "biber",
+      "pos": "v",
+      "pron": "/bi.ˈber/",
+      "defs": [{ "gloss": "to drink", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "manjar",
+      "headword": "manjar",
+      "pos": "v",
+      "pron": "/man.ˈjar/",
+      "defs": [{ "gloss": "to eat", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "morder",
+      "headword": "morder",
+      "pos": "v",
+      "pron": "/mor.ˈder/",
+      "defs": [{ "gloss": "to bite", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "succer",
+      "headword": "succer",
+      "pos": "v",
+      "pron": "/suk.ˈtser/",
+      "defs": [{ "gloss": "to suck", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "sputar",
+      "headword": "sputar",
+      "pos": "v",
+      "pron": "/spu.ˈtar/",
+      "defs": [{ "gloss": "to spit", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "vomitar",
+      "headword": "vomitar",
+      "pos": "v",
+      "pron": "/vo.mi.ˈtar/",
+      "defs": [{ "gloss": "to vomit", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "suflar",
+      "headword": "suflar",
+      "pos": "v",
+      "pron": "/su.ˈflar/",
+      "defs": [{ "gloss": "to blow", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "respirar",
+      "headword": "respirar",
+      "pos": "v",
+      "pron": "/res.pi.ˈrar/",
+      "defs": [{ "gloss": "to breathe", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "rider",
+      "headword": "rider",
+      "pos": "v",
+      "pron": "/ri.ˈder/",
+      "defs": [{ "gloss": "to laugh", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "vider",
+      "headword": "vider",
+      "pos": "v",
+      "pron": "/vi.ˈder/",
+      "defs": [{ "gloss": "to see", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "audir",
+      "headword": "audir",
+      "pos": "v",
+      "pron": "/au.ˈdir/",
+      "defs": [{ "gloss": "to hear", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "saper",
+      "headword": "saper",
+      "pos": "v",
+      "pron": "/sa.ˈper/",
+      "defs": [{ "gloss": "to know", "notes": "fact" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "pensar",
+      "headword": "pensar",
+      "pos": "v",
+      "pron": "/pen.ˈsar/",
+      "defs": [{ "gloss": "to think", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "odorar",
+      "headword": "odorar",
+      "pos": "v",
+      "pron": "/o.do.ˈrar/",
+      "defs": [{ "gloss": "to smell", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "temer",
+      "headword": "temer",
+      "pos": "v",
+      "pron": "/te.ˈmer/",
+      "defs": [{ "gloss": "to fear", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "dormir",
+      "headword": "dormir",
+      "pos": "v",
+      "pron": "/dor.ˈmir/",
+      "defs": [{ "gloss": "to sleep", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "viver",
+      "headword": "viver",
+      "pos": "v",
+      "pron": "/vi.ˈver/",
+      "defs": [{ "gloss": "to live", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "morir",
+      "headword": "morir",
+      "pos": "v",
+      "pron": "/mo.ˈrir/",
+      "defs": [{ "gloss": "to die", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "matar",
+      "headword": "matar",
+      "pos": "v",
+      "pron": "/ma.ˈtar/",
+      "defs": [{ "gloss": "to kill", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "combater",
+      "headword": "combater",
+      "pos": "v",
+      "pron": "/com.ba.ˈter/",
+      "defs": [{ "gloss": "to fight", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "caciar",
+      "headword": "caciar",
+      "pos": "v",
+      "pron": "/ka.ˈtsjar/",
+      "defs": [{ "gloss": "to hunt", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "bater",
+      "headword": "bater",
+      "pos": "v",
+      "pron": "/ba.ˈter/",
+      "defs": [{ "gloss": "to hit", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "cortar",
+      "headword": "cortar",
+      "pos": "v",
+      "pron": "/cor.ˈtar/",
+      "defs": [{ "gloss": "to cut", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "fender",
+      "headword": "fender",
+      "pos": "v",
+      "pron": "/fen.ˈder/",
+      "defs": [{ "gloss": "to split", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "pungir",
+      "headword": "pungir",
+      "pos": "v",
+      "pron": "/pun.ˈjir/",
+      "defs": [{ "gloss": "to stab", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "gratar",
+      "headword": "gratar",
+      "pos": "v",
+      "pron": "/gra.ˈtar/",
+      "defs": [{ "gloss": "to scratch", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "cavar",
+      "headword": "cavar",
+      "pos": "v",
+      "pron": "/ca.ˈvar/",
+      "defs": [{ "gloss": "to dig", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "natar",
+      "headword": "natar",
+      "pos": "v",
+      "pron": "/na.ˈtar/",
+      "defs": [{ "gloss": "to swim", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "volar",
+      "headword": "volar",
+      "pos": "v",
+      "pron": "/vo.ˈlar/",
+      "defs": [{ "gloss": "to fly", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "caminar",
+      "headword": "caminar",
+      "pos": "v",
+      "pron": "/ca.mi.ˈnar/",
+      "defs": [{ "gloss": "to walk", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "venir",
+      "headword": "venir",
+      "pos": "v",
+      "pron": "/ve.ˈnir/",
+      "defs": [{ "gloss": "to come", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "jacer",
+      "headword": "jacer",
+      "pos": "v",
+      "pron": "/ja.ˈtser/",
+      "defs": [{ "gloss": "to lie", "notes": "state" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "seder",
+      "headword": "seder",
+      "pos": "v",
+      "pron": "/se.ˈder/",
+      "defs": [{ "gloss": "to sit", "notes": "state" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "star",
+      "headword": "star",
+      "pos": "v",
+      "pron": "/star/",
+      "defs": [{ "gloss": "to stand", "notes": "state" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "girar",
+      "headword": "girar",
+      "pos": "v",
+      "pron": "/ji.ˈrar/",
+      "defs": [{ "gloss": "to turn", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "cader",
+      "headword": "cader",
+      "pos": "v",
+      "pron": "/ca.ˈder/",
+      "defs": [{ "gloss": "to fall", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "donar",
+      "headword": "donar",
+      "pos": "v",
+      "pron": "/do.ˈnar/",
+      "defs": [{ "gloss": "to give", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "tener",
+      "headword": "tener",
+      "pos": "v",
+      "pron": "/te.ˈner/",
+      "defs": [{ "gloss": "to hold", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "premer",
+      "headword": "premer",
+      "pos": "v",
+      "pron": "/pre.ˈmer/",
+      "defs": [{ "gloss": "to squeeze", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "friccionar",
+      "headword": "friccionar",
+      "pos": "v",
+      "pron": "/frik.tsjo.ˈnar/",
+      "defs": [{ "gloss": "to rub", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "lavar",
+      "headword": "lavar",
+      "pos": "v",
+      "pron": "/la.ˈvar/",
+      "defs": [{ "gloss": "to wash", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "limpar",
+      "headword": "limpar",
+      "pos": "v",
+      "pron": "/lim.ˈpar/",
+      "defs": [{ "gloss": "to wipe", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "traher",
+      "headword": "traher",
+      "pos": "v",
+      "pron": "/tra.ˈer/",
+      "defs": [{ "gloss": "to pull", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "impeller",
+      "headword": "impeller",
+      "pos": "v",
+      "pron": "/im.pel.ˈler/",
+      "defs": [{ "gloss": "to push", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "jectar",
+      "headword": "jectar",
+      "pos": "v",
+      "pron": "/jek.ˈtar/",
+      "defs": [{ "gloss": "to throw", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "ligar",
+      "headword": "ligar",
+      "pos": "v",
+      "pron": "/li.ˈgar/",
+      "defs": [{ "gloss": "to tie", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "coser",
+      "headword": "coser",
+      "pos": "v",
+      "pron": "/co.ˈzer/",
+      "defs": [{ "gloss": "to sew", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "computar",
+      "headword": "computar",
+      "pos": "v",
+      "pron": "/com.pu.ˈtar/",
+      "defs": [{ "gloss": "to count", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "dicer",
+      "headword": "dicer",
+      "pos": "v",
+      "pron": "/di.ˈtser/",
+      "defs": [{ "gloss": "to say", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "cantar",
+      "headword": "cantar",
+      "pos": "v",
+      "pron": "/can.ˈtar/",
+      "defs": [{ "gloss": "to sing", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "jocar",
+      "headword": "jocar",
+      "pos": "v",
+      "pron": "/jo.ˈkar/",
+      "defs": [{ "gloss": "to play", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "flutuar",
+      "headword": "flutuar",
+      "pos": "v",
+      "pron": "/flu.tu.ˈar/",
+      "defs": [{ "gloss": "to float", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "currer",
+      "headword": "currer",
+      "pos": "v",
+      "pron": "/cur.ˈrer/",
+      "defs": [{ "gloss": "to flow", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "gelar",
+      "headword": "gelar",
+      "pos": "v",
+      "pron": "/je.ˈlar/",
+      "defs": [{ "gloss": "to freeze", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "inflar",
+      "headword": "inflar",
+      "pos": "v",
+      "pron": "/in.ˈflar/",
+      "defs": [{ "gloss": "to swell", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "sol",
+      "headword": "sol",
+      "pos": "n",
+      "pron": "/sol/",
+      "defs": [{ "gloss": "sun", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "luna",
+      "headword": "luna",
+      "pos": "n",
+      "pron": "/ˈlu.na/",
+      "defs": [{ "gloss": "moon", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "stela",
+      "headword": "stela",
+      "pos": "n",
+      "pron": "/ˈste.la/",
+      "defs": [{ "gloss": "star", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "aqua",
+      "headword": "áqua",
+      "pos": "n",
+      "pron": "/ˈa.kwa/",
+      "defs": [{ "gloss": "water", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "pluvia",
+      "headword": "plúvia",
+      "pos": "n",
+      "pron": "/ˈplu.vi.a/",
+      "defs": [{ "gloss": "rain", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "fluvio",
+      "headword": "flúvio",
+      "pos": "n",
+      "pron": "/ˈflu.vi.o/",
+      "defs": [{ "gloss": "river", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "laco",
+      "headword": "laco",
+      "pos": "n",
+      "pron": "/ˈla.ko/",
+      "defs": [{ "gloss": "lake", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "mar",
+      "headword": "mar",
+      "pos": "n",
+      "pron": "/mar/",
+      "defs": [{ "gloss": "sea", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "sal",
+      "headword": "sal",
+      "pos": "n",
+      "pron": "/sal/",
+      "defs": [{ "gloss": "salt", "notes": "substance" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "petra",
+      "headword": "petra",
+      "pos": "n",
+      "pron": "/ˈpe.tra/",
+      "defs": [{ "gloss": "stone", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "arena",
+      "headword": "arena",
+      "pos": "n",
+      "pron": "/a.ˈre.na/",
+      "defs": [{ "gloss": "sand", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "po",
+      "headword": "pó",
+      "pos": "n",
+      "pron": "/po/",
+      "defs": [{ "gloss": "dust", "notes": "substance" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "terra",
+      "headword": "terra",
+      "pos": "n",
+      "pron": "/ˈter.ra/",
+      "defs": [{ "gloss": "earth", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "nube",
+      "headword": "nube",
+      "pos": "n",
+      "pron": "/ˈnu.be/",
+      "defs": [{ "gloss": "cloud", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "nebula",
+      "headword": "nébula",
+      "pos": "n",
+      "pron": "/ˈne.bu.la/",
+      "defs": [{ "gloss": "fog", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "celo",
+      "headword": "celo",
+      "pos": "n",
+      "pron": "/ˈtse.lo/",
+      "defs": [{ "gloss": "sky", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "vento",
+      "headword": "vento",
+      "pos": "n",
+      "pron": "/ˈven.to/",
+      "defs": [{ "gloss": "wind", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "nive",
+      "headword": "nive",
+      "pos": "n",
+      "pron": "/ˈni.ve/",
+      "defs": [{ "gloss": "snow", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "gelo",
+      "headword": "gelo",
+      "pos": "n",
+      "pron": "/ˈje.lo/",
+      "defs": [{ "gloss": "ice", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "fumo",
+      "headword": "fumo",
+      "pos": "n",
+      "pron": "/ˈfu.mo/",
+      "defs": [{ "gloss": "smoke", "notes": "substance" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "foco",
+      "headword": "foco",
+      "pos": "n",
+      "pron": "/ˈfo.ko/",
+      "defs": [{ "gloss": "fire", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "cinere",
+      "headword": "cínere",
+      "pos": "n",
+      "pron": "/ˈtsi.ne.re/",
+      "defs": [{ "gloss": "ash", "notes": "substance" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "arder",
+      "headword": "arder",
+      "pos": "v",
+      "pron": "/ar.ˈder/",
+      "defs": [{ "gloss": "to burn", "notes": "action" }],
+      "tags": ["action"]
+    },
+    {
+      "id": "via",
+      "headword": "via",
+      "pos": "n",
+      "pron": "/ˈvi.a/",
+      "defs": [{ "gloss": "road", "notes": "object" }],
+      "tags": ["object"]
+    },
+    {
+      "id": "monte",
+      "headword": "monte",
+      "pos": "n",
+      "pron": "/ˈmon.te/",
+      "defs": [{ "gloss": "mountain", "notes": "nature" }],
+      "tags": ["nature"]
+    },
+    {
+      "id": "rubro",
+      "headword": "rubro",
+      "pos": "adj",
+      "pron": "/ˈru.bro/",
+      "defs": [{ "gloss": "red", "notes": "color" }],
+      "tags": ["color"]
+    },
+    {
+      "id": "verde",
+      "headword": "verde",
+      "pos": "adj",
+      "pron": "/ˈver.de/",
+      "defs": [{ "gloss": "green", "notes": "color" }],
+      "tags": ["color"]
+    },
+    {
+      "id": "amarelo",
+      "headword": "amarelo",
+      "pos": "adj",
+      "pron": "/a.ma.ˈre.lo/",
+      "defs": [{ "gloss": "yellow", "notes": "color" }],
+      "tags": ["color"]
+    },
+    {
+      "id": "blanco",
+      "headword": "blanco",
+      "pos": "adj",
+      "pron": "/ˈblan.ko/",
+      "defs": [{ "gloss": "white", "notes": "color" }],
+      "tags": ["color"]
+    },
+    {
+      "id": "negro",
+      "headword": "negro",
+      "pos": "adj",
+      "pron": "/ˈne.gro/",
+      "defs": [{ "gloss": "black", "notes": "color" }],
+      "tags": ["color"]
+    },
+    {
+      "id": "nocte",
+      "headword": "nocte",
+      "pos": "n",
+      "pron": "/ˈnok.te/",
+      "defs": [{ "gloss": "night", "notes": "time" }],
+      "tags": ["time"]
+    },
+    {
+      "id": "dia",
+      "headword": "dia",
+      "pos": "n",
+      "pron": "/ˈdi.a/",
+      "defs": [{ "gloss": "day", "notes": "time" }],
+      "tags": ["time"]
+    },
+    {
+      "id": "ano",
+      "headword": "ano",
+      "pos": "n",
+      "pron": "/ˈa.no/",
+      "defs": [{ "gloss": "year", "notes": "time" }],
+      "tags": ["time"]
+    },
+    {
+      "id": "calido",
+      "headword": "calido",
+      "pos": "adj",
+      "pron": "/ˈka.li.do/",
+      "defs": [{ "gloss": "warm", "notes": "temperature" }],
+      "tags": ["temperature"]
+    },
+    {
+      "id": "frigor",
+      "headword": "frígor",
+      "pos": "n",
+      "pron": "/ˈfri.gor/",
+      "defs": [{ "gloss": "cold", "notes": "noun usage" }],
+      "tags": ["temperature"]
+    },
+    {
+      "id": "pleno",
+      "headword": "pleno",
+      "pos": "adj",
+      "pron": "/ˈple.no/",
+      "defs": [{ "gloss": "full", "notes": "state" }],
+      "tags": ["state"]
+    },
+    {
+      "id": "novo",
+      "headword": "novo",
+      "pos": "adj",
+      "pron": "/ˈno.vo/",
+      "defs": [{ "gloss": "new", "notes": "state" }],
+      "tags": ["state"]
+    },
+    {
+      "id": "antiquo",
+      "headword": "antíquo",
+      "pos": "adj",
+      "pron": "/an.ˈti.kwo/",
+      "defs": [{ "gloss": "old", "notes": "state" }],
+      "tags": ["state"]
+    },
+    {
+      "id": "bono",
+      "headword": "bono",
+      "pos": "adj",
+      "pron": "/ˈbo.no/",
+      "defs": [{ "gloss": "good", "notes": "quality" }],
+      "tags": ["quality"]
+    },
+    {
+      "id": "malo",
+      "headword": "malo",
+      "pos": "adj",
+      "pron": "/ˈma.lo/",
+      "defs": [{ "gloss": "bad", "notes": "quality" }],
+      "tags": ["quality"]
+    },
+    {
+      "id": "putre",
+      "headword": "putre",
+      "pos": "adj",
+      "pron": "/ˈpu.tre/",
+      "defs": [{ "gloss": "rotten", "notes": "state" }],
+      "tags": ["state"]
+    },
+    {
+      "id": "sujo",
+      "headword": "sujo",
+      "pos": "adj",
+      "pron": "/ˈsu.jo/",
+      "defs": [{ "gloss": "dirty", "notes": "state" }],
+      "tags": ["state"]
+    },
+    {
+      "id": "directo",
+      "headword": "directo",
+      "pos": "adj",
+      "pron": "/di.ˈrek.to/",
+      "defs": [{ "gloss": "straight", "notes": "shape" }],
+      "tags": ["shape"]
+    },
+    {
+      "id": "rotundo",
+      "headword": "rotundo",
+      "pos": "adj",
+      "pron": "/ro.ˈtun.do/",
+      "defs": [{ "gloss": "round", "notes": "shape" }],
+      "tags": ["shape"]
+    },
+    {
+      "id": "acuto",
+      "headword": "acuto",
+      "pos": "adj",
+      "pron": "/a.ˈku.to/",
+      "defs": [{ "gloss": "sharp", "notes": "property" }],
+      "tags": ["property"]
+    },
+    {
+      "id": "obtuso",
+      "headword": "obtuso",
+      "pos": "adj",
+      "pron": "/ob.ˈtu.zo/",
+      "defs": [{ "gloss": "dull", "notes": "property" }],
+      "tags": ["property"]
+    },
+    {
+      "id": "lisio",
+      "headword": "lisio",
+      "pos": "adj",
+      "pron": "/ˈli.zi.o/",
+      "defs": [{ "gloss": "smooth", "notes": "property" }],
+      "tags": ["property"]
+    },
+    {
+      "id": "humido",
+      "headword": "húmido",
+      "pos": "adj",
+      "pron": "/ˈu.mi.do/",
+      "defs": [{ "gloss": "wet", "notes": "state" }],
+      "tags": ["state"]
+    },
+    {
+      "id": "sico",
+      "headword": "sico",
+      "pos": "adj",
+      "pron": "/ˈsi.ko/",
+      "defs": [{ "gloss": "dry", "notes": "state" }],
+      "tags": ["state"]
+    },
+    {
+      "id": "correcto",
+      "headword": "correcto",
+      "pos": "adj",
+      "pron": "/cor.ˈrek.to/",
+      "defs": [{ "gloss": "correct", "notes": "quality" }],
+      "tags": ["quality"]
+    },
+    {
+      "id": "proximo",
+      "headword": "próximo",
+      "pos": "adj",
+      "pron": "/ˈproks.si.mo/",
+      "defs": [{ "gloss": "near", "notes": "location" }],
+      "tags": ["location"]
+    },
+    {
+      "id": "longe",
+      "headword": "longe",
+      "pos": "adv",
+      "pron": "/ˈlon.je/",
+      "defs": [{ "gloss": "far", "notes": "location" }],
+      "tags": ["location"]
+    },
+    {
+      "id": "dextra",
+      "headword": "dextra",
+      "pos": "adj",
+      "pron": "/ˈdeks.tra/",
+      "defs": [{ "gloss": "right", "notes": "direction" }],
+      "tags": ["location"]
+    },
+    {
+      "id": "sinistra",
+      "headword": "sinistra",
+      "pos": "adj",
+      "pron": "/si.ˈnis.tra/",
+      "defs": [{ "gloss": "left", "notes": "direction" }],
+      "tags": ["location"]
+    },
+    {
+      "id": "a",
+      "headword": "a",
+      "pos": "prep",
+      "pron": "/a/",
+      "defs": [{ "gloss": "at", "notes": "preposition" }],
+      "tags": ["preposition"]
+    },
+    {
+      "id": "in",
+      "headword": "in",
+      "pos": "prep",
+      "pron": "/in/",
+      "defs": [{ "gloss": "in", "notes": "preposition" }],
+      "tags": ["preposition"]
+    },
+    {
+      "id": "con",
+      "headword": "con",
+      "pos": "prep",
+      "pron": "/kon/",
+      "defs": [{ "gloss": "with", "notes": "preposition" }],
+      "tags": ["preposition"]
+    },
+    {
+      "id": "e",
+      "headword": "e",
+      "pos": "conj",
+      "pron": "/e/",
+      "defs": [{ "gloss": "and", "notes": "conjunction" }],
+      "tags": ["conjunction"]
+    },
+    {
+      "id": "se",
+      "headword": "se",
+      "pos": "conj",
+      "pron": "/se/",
+      "defs": [{ "gloss": "if", "notes": "conjunction" }],
+      "tags": ["conjunction"]
+    },
+    {
+      "id": "perque",
+      "headword": "perque",
+      "pos": "conj",
+      "pron": "/per.ˈke/",
+      "defs": [{ "gloss": "because", "notes": "conjunction" }],
+      "tags": ["conjunction"]
+    },
+    {
+      "id": "nomine",
+      "headword": "nómine",
+      "pos": "n",
+      "pron": "/ˈno.mi.ne/",
+      "defs": [{ "gloss": "name", "notes": "abstract" }],
+      "tags": ["noun"]
+    }
+  ]
+}
