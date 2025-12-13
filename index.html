@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diccionário Internacional</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <h1 id="title">Dictionary</h1>
+    <p class="muted" id="subtitle">Loading…</p>
+
+    <div class="row">
+      <input id="q" placeholder="Search (headword / gloss / tag)..." autocomplete="off" />
+      <button id="clear">Clear</button>
+    </div>
+
+    <details class="panel">
+      <summary>Auto-translate (optional)</summary>
+      <div class="row">
+        <input id="mtText" placeholder="Scribe uno texto per traducir…" />
+        <select id="mtFrom">
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+        </select>
+        <select id="mtTo">
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+        </select>
+        <button id="mtBtn">Translate</button>
+      </div>
+      <p class="muted">
+        Uses MyMemory (free tier). Anonymous usage is limited; providing an email parameter raises the limit. :contentReference[oaicite:0]{index=0}
+      </p>
+      <pre id="mtOut" class="box"></pre>
+    </details>
+  </header>
+
+  <main class="wrap grid">
+    <section>
+      <h2>Results</h2>
+      <div id="results" class="list"></div>
+    </section>
+
+    <section>
+      <h2>Entry</h2>
+      <div id="entry" class="box muted">Search and pick an entry.</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
