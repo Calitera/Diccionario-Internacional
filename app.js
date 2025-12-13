@@ -127,16 +127,22 @@ function renderAZ(entries) {
   const root = el("az");
   root.innerHTML = "";
 
-  // Determine which letters exist (based on normalized headword first char)
+  // Gramática Internacional alphabet (display order)
+  const ALPHABET = ["a","b","c","ç","d","e","f","g","h","i","j","l","m","n","o","p","q","r","s","t","u","v","x","z"];
+
+  // Determine which letters exist by *raw* first character (so "ç" works)
   const present = new Set();
   for (const e of entries || []) {
-    const n = normalizeForSearch(e.headword);
-    const c = n?.[0];
-    if (c && c >= "a" && c <= "z") present.add(c);
+    const hw = (e.headword || "").trim();
+    if (!hw) continue;
+
+    const first = hw[0].toLowerCase(); // keep diacritics
+    // treat accented letters as their base except ç which is its own letter here
+    const normFirst = first === "ç" ? "ç" : normalizeForSearch(first)[0]; // normalize others to base
+    if (normFirst) present.add(normFirst);
   }
 
-  for (let i = 0; i < 26; i++) {
-    const letter = String.fromCharCode("a".charCodeAt(0) + i);
+  for (const letter of ALPHABET) {
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "azbtn";
@@ -148,7 +154,6 @@ function renderAZ(entries) {
 
     btn.onclick = () => {
       if (!enabled) return;
-      // Switch to browse mode; do not destroy text search input, but browsing ignores it.
       setMode("browse", letter);
       doSearch();
     };
@@ -161,6 +166,7 @@ function renderAZ(entries) {
   if (MODE === "browse" && !BROWSE_LETTER) allBtn.classList.add("active");
   else allBtn.classList.remove("active");
 }
+
 
 function renderChips(entries) {
   const root = el("chips");
