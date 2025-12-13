@@ -162,8 +162,8 @@ async function loadLexicon() {
   el("title").textContent = `${LEX.meta?.lang || "Dictionary"}`;
   el("subtitle").textContent = `${(LEX.entries?.length || 0)} entries • ${LEX.meta?.source || ""}`;
   const heritage = 
-  `Based on ${LEX.meta?.source || "Grámatica Internacional by Campos Lima (1948)"}; used today as a part of our culture.<br>
-   Basato in ${LEX.meta?.source || "Grámatica Internacional de Campos Lima (1948)"}; usato hodie como una parte de la nostra cultura."}`;
+  `Based on ${LEX.meta?.source || "Grámatica Internacional by Campos Lima (1948)"}; used today as a part of our culture.\n
+Basato in ${LEX.meta?.source || "Grámatica Internacional de Campos Lima (1948)"}; usato hodie como una parte de la nostra cultura.`;
   el("heritageTop").textContent = heritage;
   el("heritageLine").textContent = heritage;
   el("footerMeta").textContent = `${LEX.meta?.type || ""} • v${LEX.meta?.version || ""}`;
