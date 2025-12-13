@@ -30,12 +30,20 @@
         </div>
 
         <div class="filter">
-          <span class="filter-label">Tags</span>
-          <span class="muted">Click chips below to toggle</span>
+          <span class="filter-label">Mode</span>
+          <span class="muted" id="modeLabel">Search</span>
         </div>
       </div>
 
       <div class="chips" id="chips"></div>
+
+      <div class="azwrap">
+        <div class="azhead">
+          <span class="muted">Browse A–Z</span>
+          <button id="browseAll" class="btn tiny secondary" type="button">All</button>
+        </div>
+        <div class="az" id="az"></div>
+      </div>
     </div>
   </header>
 
@@ -57,14 +65,13 @@
     </section>
   </main>
 
-<footer class="wrap footer">
-  <div class="footer-left">
-    <div><strong>Academia Caliterana de lo Internacional</strong></div>
-    <div class="muted" id="footerMeta"></div>
-    <div class="muted" id="heritageLine"></div>
-  </div>
-</footer>
-
+  <footer class="wrap footer">
+    <div class="footer-left">
+      <div><strong>Academia Caliterana de lo Internacional</strong></div>
+      <div class="muted" id="footerMeta"></div>
+      <div class="muted" id="heritageLine"></div>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>

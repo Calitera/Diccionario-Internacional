@@ -3,6 +3,12 @@ let LEX = null;
 let ACTIVE_TAGS = new Set();   // tag filter (multi-select)
 let POS_FILTER = "";           // pos filter (single-select)
 
+let MODE = "search";           // "search" or "browse"
+let BROWSE_LETTER = "";        // normalized first letter (a-z) or "" = all
+let CURRENT_ENTRY = null;
+
+let BY_NORM_HEADWORD = new Map(); // normalized headword -> entry
+
 // display-only: normalize/label POS without changing JSON
 const POS_LABELS = {
   n: "Noun",
@@ -32,16 +38,130 @@ function normalizeForSearch(str) {
     .trim();
 }
 
+function escapeHtml(s) {
+  return (s ?? "").toString()
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
 function firstGloss(e) {
   const g = e?.defs?.[0]?.gloss;
   return typeof g === "string" ? g : "";
 }
 
+function getEntryUrlHash(e) {
+  // Use headword for URL (nice), but fall back to id.
+  const hw = (e?.headword || "").trim();
+  if (hw) return "#" + encodeURIComponent(hw);
+  if (e?.id) return "#id:" + encodeURIComponent(e.id);
+  return "";
+}
+
 function entryToSearchBlob(e) {
   const defs = (e.defs || []).map(d => (typeof d.gloss === "string" ? d.gloss : "")).join(" ");
+  const notes = (e.defs || []).map(d => (typeof d.notes === "string" ? d.notes : "")).join(" ");
   const tags = (e.tags || []).join(" ");
-  return normalizeForSearch([e.headword, e.id, e.pos, e.pron, defs, tags].join(" "));
+  return normalizeForSearch([e.headword, e.id, e.pos, e.pron, defs, notes, tags].join(" "));
 }
+
+/** Tokenizes by Unicode letters; wraps known headwords with links. */
+function linkifyText(text, currentEntry) {
+  const s = (text ?? "").toString();
+  if (!s) return "";
+
+  // Split into word tokens + everything else
+  // word = letters + combining marks + simple hyphen/apostrophe
+  const re = /(\p{L}[\p{L}\p{M}'-]*)/gu;
+  let out = "";
+  let last = 0;
+
+  for (const m of s.matchAll(re)) {
+    const start = m.index ?? 0;
+    const end = start + m[0].length;
+
+    out += escapeHtml(s.slice(last, start));
+
+    const token = m[0];
+    const norm = normalizeForSearch(token);
+
+    const target = BY_NORM_HEADWORD.get(norm);
+    const isSame = target && currentEntry && normalizeForSearch(target.headword) === normalizeForSearch(currentEntry.headword);
+
+    if (target && !isSame) {
+      const href = getEntryUrlHash(target);
+      out += `<a class="xref" href="${href}">${escapeHtml(token)}</a>`;
+    } else {
+      out += escapeHtml(token);
+    }
+
+    last = end;
+  }
+
+  out += escapeHtml(s.slice(last));
+  return out;
+}
+
+function setMode(nextMode, browseLetter = BROWSE_LETTER) {
+  MODE = nextMode;
+  BROWSE_LETTER = browseLetter;
+  el("modeLabel").textContent = MODE === "browse"
+    ? (BROWSE_LETTER ? `Browse: ${BROWSE_LETTER.toUpperCase()}` : "Browse: All")
+    : "Search";
+  renderAZ(LEX?.entries || []);
+}
+
+function buildHeadwordIndex(entries) {
+  BY_NORM_HEADWORD = new Map();
+  for (const e of (entries || [])) {
+    const norm = normalizeForSearch(e.headword);
+    if (!norm) continue;
+    // first one wins if duplicates
+    if (!BY_NORM_HEADWORD.has(norm)) BY_NORM_HEADWORD.set(norm, e);
+  }
+}
+
+function renderAZ(entries) {
+  const root = el("az");
+  root.innerHTML = "";
+
+  // Determine which letters exist (based on normalized headword first char)
+  const present = new Set();
+  for (const e of entries || []) {
+    const n = normalizeForSearch(e.headword);
+    const c = n?.[0];
+    if (c && c >= "a" && c <= "z") present.add(c);
+  }
+
+  for (let i = 0; i < 26; i++) {
+    const letter = String.fromCharCode("a".charCodeAt(0) + i);
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "azbtn";
+    btn.textContent = letter.toUpperCase();
+
+    const enabled = present.has(letter);
+    if (!enabled) btn.classList.add("disabled");
+    if (MODE === "browse" && BROWSE_LETTER === letter) btn.classList.add("active");
+
+    btn.onclick = () => {
+      if (!enabled) return;
+      // Switch to browse mode; do not destroy text search input, but browsing ignores it.
+      setMode("browse", letter);
+      doSearch();
+    };
+
+    root.appendChild(btn);
+  }
+
+  // Update "All" browse button state
+  const allBtn = el("browseAll");
+  if (MODE === "browse" && !BROWSE_LETTER) allBtn.classList.add("active");
+  else allBtn.classList.remove("active");
+}
+
 function renderChips(entries) {
   const root = el("chips");
   root.innerHTML = "";
@@ -50,7 +170,6 @@ function renderChips(entries) {
   for (const e of entries) {
     for (const t of (e.tags || [])) {
       const key = normalizeForSearch(t);
-      // keep original casing for display by storing first-seen label
       if (!freq.has(key)) freq.set(key, { label: t, count: 0 });
       freq.get(key).count += 1;
     }
@@ -58,7 +177,7 @@ function renderChips(entries) {
 
   const top = [...freq.entries()]
     .sort((a,b) => b[1].count - a[1].count)
-    .slice(0, 14); // slightly more is fine
+    .slice(0, 14);
 
   for (const [key, obj] of top) {
     const chip = document.createElement("div");
@@ -79,10 +198,54 @@ function renderChips(entries) {
   }
 }
 
-function setActiveChipFromQuery() {
-  const q = normalizeForSearch(el("q").value);
-  const chips = el("chips").querySelectorAll(".chip");
-  chips.forEach(c => c.classList.toggle("active", normalizeForSearch(c.textContent) === q));
+/** Better ranking: exact headword > prefix headword > contains headword > defs/tags/notes */
+function rankResults(entries, query) {
+  const q = normalizeForSearch(query);
+  if (!q) return entries;
+
+  const tokens = q.split(/\s+/).filter(Boolean);
+
+  function scoreEntry(e) {
+    const hw = normalizeForSearch(e.headword);
+    const glosses = (e.defs || []).map(d => normalizeForSearch(d.gloss)).join(" ");
+    const notes = (e.defs || []).map(d => normalizeForSearch(d.notes)).join(" ");
+    const tags = (e.tags || []).map(t => normalizeForSearch(t)).join(" ");
+    const blob = [hw, glosses, notes, tags].join(" ");
+
+    // Must match all tokens somewhere (consistent with your previous behavior)
+    for (const t of tokens) {
+      if (!blob.includes(t)) return -Infinity;
+    }
+
+    let s = 0;
+
+    // Headword priority
+    if (hw === q) s += 1000;
+    else if (hw.startsWith(q)) s += 700;
+    else if (hw.includes(q)) s += 350;
+
+    // Token-level headword boosts
+    for (const t of tokens) {
+      if (hw === t) s += 200;
+      else if (hw.startsWith(t)) s += 120;
+      else if (hw.includes(t)) s += 60;
+
+      if (glosses.includes(t)) s += 35;
+      if (tags.includes(t)) s += 20;
+      if (notes.includes(t)) s += 10;
+    }
+
+    // Small tie-breakers: shorter headwords first, then alphabetical
+    s += Math.max(0, 40 - hw.length);
+
+    return s;
+  }
+
+  return [...entries]
+    .map(e => ({ e, s: scoreEntry(e) }))
+    .filter(x => x.s > -Infinity)
+    .sort((a,b) => b.s - a.s || normalizeForSearch(a.e.headword).localeCompare(normalizeForSearch(b.e.headword)))
+    .map(x => x.e);
 }
 
 function renderResults(entries) {
@@ -105,42 +268,127 @@ function renderResults(entries) {
 
     div.innerHTML = `
       <div class="top">
-        <div class="hw">${e.headword}</div>
-        <div class="badge">${posLabel(e.pos)}</div>
+        <div class="hw">${escapeHtml(e.headword)}</div>
+        <div class="badge">${escapeHtml(posLabel(e.pos))}</div>
       </div>
-      <div class="gloss">${gloss ? gloss : `<span class="meta">No gloss</span>`}</div>
-      <div class="small">${e.pron ? e.pron : ""}</div>
-      ${tags.length ? `<div class="pills">${tags.map(t => `<span class="pill">${t}</span>`).join("")}</div>` : ""}
+      <div class="gloss">${gloss ? escapeHtml(gloss) : `<span class="meta">No gloss</span>`}</div>
+      <div class="small">${e.pron ? escapeHtml(e.pron) : ""}</div>
+      ${tags.length ? `<div class="pills">${tags.map(t => `<span class="pill">${escapeHtml(t)}</span>`).join("")}</div>` : ""}
     `;
 
-    div.onclick = () => renderEntry(e);
+    div.onclick = () => openEntry(e, true);
     root.appendChild(div);
   }
 }
 
+function buildCitation(e) {
+  const academy = "Academia Caliterana de lo Internacional";
+  const lang = LEX?.meta?.lang || "Lo Internacional";
+  const source = LEX?.meta?.source || "a historical source";
+  const baseUrl = window.location.href.split("#")[0];
+  const url = baseUrl + getEntryUrlHash(e);
+  return `${academy}. ${lang} Dictionary — entry “${e.headword}”. Based on ${source}. ${url}`;
+}
+
+async function copyText(text) {
+  const t = (text ?? "").toString();
+  try {
+    await navigator.clipboard.writeText(t);
+    return true;
+  } catch {
+    // Fallback
+    const ta = document.createElement("textarea");
+    ta.value = t;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.left = "-9999px";
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+      return true;
+    } catch {
+      document.body.removeChild(ta);
+      return false;
+    }
+  }
+}
+
+function wireCopyButtons(e) {
+  const btnHw = el("copyHw");
+  const btnPron = el("copyPron");
+  const btnCit = el("copyCit");
+  const toast = el("toast");
+
+  const showToast = (msg) => {
+    toast.textContent = msg;
+    toast.classList.add("show");
+    setTimeout(() => toast.classList.remove("show"), 1200);
+  };
+
+  btnHw.onclick = async () => {
+    const ok = await copyText(e.headword);
+    showToast(ok ? "Copied headword" : "Copy failed");
+  };
+
+  btnPron.onclick = async () => {
+    const ok = await copyText(e.pron || "");
+    showToast(ok ? "Copied pronunciation" : "Copy failed");
+  };
+
+  btnCit.onclick = async () => {
+    const ok = await copyText(buildCitation(e));
+    showToast(ok ? "Copied citation" : "Copy failed");
+  };
+
+  btnPron.disabled = !(e.pron && e.pron.trim());
+  btnPron.classList.toggle("disabled", btnPron.disabled);
+}
+
 function renderEntry(e) {
+  CURRENT_ENTRY = e;
   el("entryMeta").textContent = e.id ? `ID: ${e.id}` : "";
 
   const defs = (e.defs || [])
-    .map((d, i) => `<li><strong>${d.gloss}</strong>${d.notes ? ` <span class="meta">— ${d.notes}</span>` : ""}</li>`)
+    .map(d => {
+      const g = linkifyText(d.gloss, e);
+      const n = d.notes ? ` <span class="meta">— ${linkifyText(d.notes, e)}</span>` : "";
+      return `<li><strong>${g}</strong>${n}</li>`;
+    })
     .join("");
 
   const examples = (e.examples || [])
     .map(ex => `
       <div class="ex">
-        <div class="src">${ex.src || ""}</div>
-        ${ex.gloss ? `<div class="gl">${ex.gloss}</div>` : ""}
+        <div class="src">${linkifyText(ex.src || "", e)}</div>
+        ${ex.gloss ? `<div class="gl">${linkifyText(ex.gloss, e)}</div>` : ""}
       </div>
     `).join("");
 
   const tags = (e.tags || [])
-    .map(t => `<span class="pill">${t}</span>`)
+    .map(t => `<span class="pill">${escapeHtml(t)}</span>`)
     .join("");
+
+  const href = getEntryUrlHash(e);
 
   el("entry").classList.remove("empty");
   el("entry").innerHTML = `
-    <h3>${e.headword} ${e.pron ? `<span class="pron">${e.pron}</span>` : ""}</h3>
-    <div class="meta">${e.pos ? `Part of speech: ${posLabel(e.pos)}` : ""}</div>
+    <div class="entry-head">
+      <div class="entry-title">
+        <h3>${escapeHtml(e.headword)} ${e.pron ? `<span class="pron">${escapeHtml(e.pron)}</span>` : ""}</h3>
+        <div class="meta">${e.pos ? `Part of speech: ${escapeHtml(posLabel(e.pos))}` : ""}</div>
+        <div class="meta entry-link">${href ? `Link: <a class="permalink" href="${href}">${escapeHtml(decodeURIComponent(href))}</a>` : ""}</div>
+      </div>
+
+      <div class="entry-actions">
+        <button id="copyHw" class="btn tiny" type="button">Copy headword</button>
+        <button id="copyPron" class="btn tiny" type="button">Copy pron</button>
+        <button id="copyCit" class="btn tiny secondary" type="button">Copy citation</button>
+      </div>
+    </div>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
 
     <div class="line"></div>
 
@@ -151,6 +399,19 @@ function renderEntry(e) {
 
     ${tags ? `<div class="line"></div><div class="label">Tags</div><div class="pills">${tags}</div>` : ""}
   `;
+
+  wireCopyButtons(e);
+}
+
+function openEntry(e, pushHash) {
+  renderEntry(e);
+  if (pushHash) {
+    const h = getEntryUrlHash(e);
+    if (h) {
+      // Setting hash pushes history entry (back/forward works)
+      if (window.location.hash !== h) window.location.hash = h;
+    }
+  }
 }
 
 function initPosFilter(entries) {
@@ -178,56 +439,125 @@ function initPosFilter(entries) {
   };
 }
 
+function matchesFilters(e) {
+  // POS filter
+  if (POS_FILTER && (e.pos || "").trim() !== POS_FILTER) return false;
+
+  // Tag filter (ALL selected tags must be present)
+  if (ACTIVE_TAGS.size) {
+    const entryTags = new Set((e.tags || []).map(t => normalizeForSearch(t)));
+    for (const t of ACTIVE_TAGS) {
+      if (!entryTags.has(t)) return false;
+    }
+  }
+
+  return true;
+}
+
 function doSearch() {
-  const q = normalizeForSearch(el("q").value);
+  const q = el("q").value;
   const all = LEX.entries || [];
 
-  const tokens = q ? q.split(/\s+/).filter(Boolean) : [];
+  // Browse mode: ignore query; filter by starting letter
+  if (MODE === "browse") {
+    let out = all.filter(matchesFilters);
 
-  const out = all.filter(e => {
-    // POS filter
-    if (POS_FILTER && (e.pos || "").trim() !== POS_FILTER) return false;
-
-    // Tag filter (ALL selected tags must be present)
-    if (ACTIVE_TAGS.size) {
-      const entryTags = new Set((e.tags || []).map(t => normalizeForSearch(t)));
-      for (const t of ACTIVE_TAGS) {
-        if (!entryTags.has(t)) return false;
-      }
+    if (BROWSE_LETTER) {
+      out = out.filter(e => normalizeForSearch(e.headword).startsWith(BROWSE_LETTER));
     }
 
-    // Text search
-    if (!tokens.length) return true;
-    const blob = entryToSearchBlob(e);
-    return tokens.every(t => blob.includes(t));
-  });
+    out.sort((a,b) => normalizeForSearch(a.headword).localeCompare(normalizeForSearch(b.headword)));
+    renderResults(out);
+    return;
+  }
 
+  // Search mode
+  const qn = normalizeForSearch(q);
+  let out = all.filter(matchesFilters);
+
+  if (!qn) {
+    // Default list: alphabetical feels better than insertion order
+    out.sort((a,b) => normalizeForSearch(a.headword).localeCompare(normalizeForSearch(b.headword)));
+    renderResults(out);
+    return;
+  }
+
+  out = rankResults(out, q);
   renderResults(out);
+}
+
+function tryOpenFromHash() {
+  const hash = window.location.hash || "";
+  if (!hash || hash === "#") return;
+
+  const raw = hash.slice(1);
+
+  // Support #id:<id>
+  if (raw.startsWith("id:")) {
+    const id = decodeURIComponent(raw.slice(3));
+    const found = (LEX.entries || []).find(e => (e.id || "").toString() === id);
+    if (found) openEntry(found, false);
+    return;
+  }
+
+  // Default: headword
+  const hw = decodeURIComponent(raw);
+  const found = BY_NORM_HEADWORD.get(normalizeForSearch(hw));
+  if (found) openEntry(found, false);
 }
 
 async function loadLexicon() {
   const res = await fetch("./data/lexicon.json", { cache: "no-store" });
   if (!res.ok) throw new Error(`Failed to load lexicon.json (${res.status})`);
   LEX = await res.json();
-  
+
   initPosFilter(LEX.entries || []);
+  buildHeadwordIndex(LEX.entries || []);
 
   el("title").textContent = `${LEX.meta?.lang || "Dictionary"}`;
   el("subtitle").textContent = `${(LEX.entries?.length || 0)} entries • ${LEX.meta?.source || ""}`;
-  const heritage = 
-  `Based on ${LEX.meta?.source || "Grámatica Internacional by Campos Lima (1948)"}; used today as a part of our culture.
-  Basato in ${LEX.meta?.source || "Grámatica Internacional de Campos Lima (1948)"}; usato hodie como una parte de la nostra cultura.`;
+
+  const heritage =
+`Based on ${LEX.meta?.source || "Grámatica Internacional by Campos Lima (1948)"}; used today as a part of our culture.
+Basato in ${LEX.meta?.source || "Grámatica Internacional de Campos Lima (1948)"}; usato hodie como una parte de la nostra cultura.`;
+
   el("heritageTop").textContent = heritage;
   el("footerMeta").textContent = `${LEX.meta?.type || ""} • v${LEX.meta?.version || ""}`;
   el("heritageLine").textContent = heritage;
 
   renderChips(LEX.entries || []);
-  renderResults(LEX.entries || []);
+  setMode("search", "");
+  renderAZ(LEX.entries || []);
+
+  // Default results
+  doSearch();
+
+  // If URL has a hash, open it
+  tryOpenFromHash();
 }
 
 window.addEventListener("DOMContentLoaded", async () => {
-  el("q").addEventListener("input", doSearch);
-  el("clear").onclick = () => { el("q").value = ""; doSearch(); };
+  el("q").addEventListener("input", () => {
+    // typing switches to search mode
+    if (MODE !== "search") setMode("search", "");
+    doSearch();
+  });
+
+  el("clear").onclick = () => {
+    el("q").value = "";
+    setMode("search", "");
+    doSearch();
+  };
+
+  el("browseAll").onclick = () => {
+    setMode("browse", "");
+    doSearch();
+  };
+
+  window.addEventListener("hashchange", () => {
+    // Back/forward: open the entry from hash
+    tryOpenFromHash();
+  });
 
   try {
     await loadLexicon();
