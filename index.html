@@ -3,51 +3,50 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Diccionário Internacional</title>
+  <title>Lo Internacional Dictionary</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="wrap">
-    <h1 id="title">Dictionary</h1>
-    <p class="muted" id="subtitle">Loading…</p>
-
-    <div class="row">
-      <input id="q" placeholder="Search (headword / gloss / tag)..." autocomplete="off" />
-      <button id="clear">Clear</button>
-    </div>
-
-    <details class="panel">
-      <summary>Auto-translate (optional)</summary>
-      <div class="row">
-        <input id="mtText" placeholder="Scribe uno texto per traducir…" />
-        <select id="mtFrom">
-          <option value="en">English</option>
-          <option value="es">Spanish</option>
-        </select>
-        <select id="mtTo">
-          <option value="en">English</option>
-          <option value="es">Spanish</option>
-        </select>
-        <button id="mtBtn">Translate</button>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1 id="title">Dictionary</h1>
+          <p class="subtitle" id="subtitle">Loading…</p>
+        </div>
       </div>
-      <p class="muted">
-        Uses MyMemory (free tier). Anonymous usage is limited; providing an email parameter raises the limit. :contentReference[oaicite:0]{index=0}
-      </p>
-      <pre id="mtOut" class="box"></pre>
-    </details>
+
+      <div class="searchbar">
+        <input id="q" placeholder="Search: headword, meaning, tag…" autocomplete="off" />
+        <button id="clear" class="btn secondary" type="button">Clear</button>
+      </div>
+
+      <div class="chips" id="chips"></div>
+    </div>
   </header>
 
-  <main class="wrap grid">
-    <section>
-      <h2>Results</h2>
-      <div id="results" class="list"></div>
+  <main class="wrap layout">
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Results</h2>
+        <div class="meta" id="count"></div>
+      </div>
+      <div id="results" class="results"></div>
     </section>
 
-    <section>
-      <h2>Entry</h2>
-      <div id="entry" class="box muted">Search and pick an entry.</div>
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Entry</h2>
+        <div class="meta" id="entryMeta"></div>
+      </div>
+      <div id="entry" class="entry empty">Search and pick an entry.</div>
     </section>
   </main>
+
+  <footer class="wrap footer">
+    <span id="footerMeta"></span>
+  </footer>
 
   <script src="app.js"></script>
 </body>

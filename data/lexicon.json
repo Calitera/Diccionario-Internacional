@@ -3,9 +3,9 @@
     "lang": "Internacional",
     "glossLang": "en",
     "source": "Gramática Internacional (Campos Lima, 1948)",
-    "version": "1.1",
-    "type": "Swadesh List 207",
-    "notes": "IDs textuales; vocabulario basato in lo texto o derivato de radices latinas"
+    "version": "1.2",
+    "type": "Comprehensive Verified Dictionary",
+    "note": "Includes Swadesh words found in text + additional vocabulary. No inferred words."
   },
   "entries": [
     {
@@ -13,48 +13,45 @@
       "headword": "ego",
       "pos": "pron",
       "pron": "/ˈe.go/",
-      "defs": [{ "gloss": "I", "notes": "1st sg" }],
-      "tags": ["basic"]
-    },
-    {
-      "id": "tu",
-      "headword": "tu",
-      "pos": "pron",
-      "pron": "/tu/",
-      "defs": [{ "gloss": "you (singular)", "notes": "2nd sg" }],
-      "tags": ["basic"]
+      "defs": [{ "gloss": "I", "notes": "1st person sg" }],
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 123]"
     },
     {
       "id": "ele",
       "headword": "ele",
       "pos": "pron",
       "pron": "/ˈe.le/",
-      "defs": [{ "gloss": "he", "notes": "3rd sg masc" }],
-      "tags": ["basic"]
+      "defs": [{ "gloss": "he", "notes": "3rd person sg" }],
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 40]"
+    },
+    {
+      "id": "ela",
+      "headword": "ela",
+      "pos": "pron",
+      "pron": "/ˈe.la/",
+      "defs": [{ "gloss": "she", "notes": "3rd person sg" }],
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 48]"
     },
     {
       "id": "nos",
       "headword": "nos",
       "pos": "pron",
       "pron": "/nos/",
-      "defs": [{ "gloss": "we", "notes": "1st pl" }],
-      "tags": ["basic"]
-    },
-    {
-      "id": "vos",
-      "headword": "vos",
-      "pos": "pron",
-      "pron": "/vos/",
-      "defs": [{ "gloss": "you (plural)", "notes": "2nd pl" }],
-      "tags": ["basic"]
+      "defs": [{ "gloss": "we", "notes": "1st person pl" }],
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 254]"
     },
     {
       "id": "eles",
       "headword": "eles",
       "pos": "pron",
       "pron": "/ˈe.les/",
-      "defs": [{ "gloss": "they", "notes": "3rd pl" }],
-      "tags": ["basic"]
+      "defs": [{ "gloss": "they", "notes": "3rd person pl" }],
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 65]"
     },
     {
       "id": "esto",
@@ -62,7 +59,8 @@
       "pos": "pron",
       "pron": "/ˈes.to/",
       "defs": [{ "gloss": "this", "notes": "demonstrative" }],
-      "tags": ["basic"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 188]"
     },
     {
       "id": "esso",
@@ -70,7 +68,8 @@
       "pos": "pron",
       "pron": "/ˈes.so/",
       "defs": [{ "gloss": "that", "notes": "demonstrative" }],
-      "tags": ["basic"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 39]"
     },
     {
       "id": "aqui",
@@ -78,31 +77,26 @@
       "pos": "adv",
       "pron": "/a.ˈkwi/",
       "defs": [{ "gloss": "here", "notes": "location" }],
-      "tags": ["location"]
-    },
-    {
-      "id": "ali",
-      "headword": "ali",
-      "pos": "adv",
-      "pron": "/a.ˈli/",
-      "defs": [{ "gloss": "there", "notes": "location" }],
-      "tags": ["location"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 123]"
     },
     {
       "id": "qui",
       "headword": "qui",
       "pos": "pron",
-      "pron": "/kwi/",
+      "pron": "/ki/",
       "defs": [{ "gloss": "who", "notes": "interrogative" }],
-      "tags": ["question"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 202]"
     },
     {
       "id": "que",
       "headword": "que",
       "pos": "pron",
       "pron": "/ke/",
-      "defs": [{ "gloss": "what", "notes": "interrogative" }],
-      "tags": ["question"]
+      "defs": [{ "gloss": "what/that", "notes": "interrogative/relative" }],
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 27]"
     },
     {
       "id": "ubi",
@@ -110,7 +104,8 @@
       "pos": "adv",
       "pron": "/ˈu.bi/",
       "defs": [{ "gloss": "where", "notes": "interrogative" }],
-      "tags": ["question"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 433]"
     },
     {
       "id": "quando",
@@ -118,7 +113,8 @@
       "pos": "adv",
       "pron": "/ˈkwan.do/",
       "defs": [{ "gloss": "when", "notes": "interrogative" }],
-      "tags": ["question"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 107]"
     },
     {
       "id": "como",
@@ -126,15 +122,17 @@
       "pos": "adv",
       "pron": "/ˈko.mo/",
       "defs": [{ "gloss": "how", "notes": "interrogative" }],
-      "tags": ["question"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 39]"
     },
     {
       "id": "non",
       "headword": "non",
-      "pos": "part",
+      "pos": "adv",
       "pron": "/non/",
       "defs": [{ "gloss": "not", "notes": "negation" }],
-      "tags": ["basic"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 27]"
     },
     {
       "id": "toto",
@@ -142,7 +140,8 @@
       "pos": "adj",
       "pron": "/ˈto.to/",
       "defs": [{ "gloss": "all", "notes": "quantifier" }],
-      "tags": ["quantity"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 5]"
     },
     {
       "id": "multos",
@@ -150,7 +149,8 @@
       "pos": "adj",
       "pron": "/ˈmul.tos/",
       "defs": [{ "gloss": "many", "notes": "quantifier" }],
-      "tags": ["quantity"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 61]"
     },
     {
       "id": "alcunos",
@@ -158,15 +158,17 @@
       "pos": "adj",
       "pron": "/al.ˈku.nos/",
       "defs": [{ "gloss": "some", "notes": "quantifier" }],
-      "tags": ["quantity"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 171]"
     },
     {
-      "id": "pocos",
-      "headword": "pocos",
+      "id": "poco",
+      "headword": "poco",
       "pos": "adj",
-      "pron": "/ˈpo.kos/",
-      "defs": [{ "gloss": "few", "notes": "quantifier" }],
-      "tags": ["quantity"]
+      "pron": "/ˈpo.ko/",
+      "defs": [{ "gloss": "few/little", "notes": "quantifier" }],
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 34]"
     },
     {
       "id": "altro",
@@ -174,47 +176,53 @@
       "pos": "adj",
       "pron": "/ˈal.tro/",
       "defs": [{ "gloss": "other", "notes": "" }],
-      "tags": ["basic"]
+      "tags": ["basic", "swadesh"],
+      "src_id": "[cite: 71]"
     },
     {
       "id": "uno",
       "headword": "uno",
       "pos": "num",
       "pron": "/ˈu.no/",
-      "defs": [{ "gloss": "one", "notes": "number" }],
-      "tags": ["number"]
+      "defs": [{ "gloss": "one", "notes": "cardinal" }],
+      "tags": ["number", "swadesh"],
+      "src_id": "[cite: 2]"
     },
     {
       "id": "duos",
       "headword": "duos",
       "pos": "num",
       "pron": "/ˈdwos/",
-      "defs": [{ "gloss": "two", "notes": "number" }],
-      "tags": ["number"]
+      "defs": [{ "gloss": "two", "notes": "cardinal" }],
+      "tags": ["number", "swadesh"],
+      "src_id": "[cite: 49]"
     },
     {
       "id": "tres",
       "headword": "tres",
       "pos": "num",
       "pron": "/tres/",
-      "defs": [{ "gloss": "three", "notes": "number" }],
-      "tags": ["number"]
+      "defs": [{ "gloss": "three", "notes": "cardinal" }],
+      "tags": ["number", "swadesh"],
+      "src_id": "[cite: 208]"
     },
     {
       "id": "quatro",
       "headword": "quatro",
       "pos": "num",
       "pron": "/ˈkwa.tro/",
-      "defs": [{ "gloss": "four", "notes": "number" }],
-      "tags": ["number"]
+      "defs": [{ "gloss": "four", "notes": "cardinal" }],
+      "tags": ["number", "swadesh"],
+      "src_id": "[cite: 194]"
     },
     {
       "id": "quinque",
       "headword": "quinque",
       "pos": "num",
       "pron": "/ˈkwin.kwe/",
-      "defs": [{ "gloss": "five", "notes": "number" }],
-      "tags": ["number"]
+      "defs": [{ "gloss": "five", "notes": "cardinal" }],
+      "tags": ["number", "swadesh"],
+      "src_id": "[cite: 188]"
     },
     {
       "id": "grande",
@@ -222,7 +230,8 @@
       "pos": "adj",
       "pron": "/ˈgran.de/",
       "defs": [{ "gloss": "big", "notes": "size" }],
-      "tags": ["size"]
+      "tags": ["size", "swadesh"],
+      "src_id": "[cite: 26]"
     },
     {
       "id": "longo",
@@ -230,15 +239,8 @@
       "pos": "adj",
       "pron": "/ˈlon.go/",
       "defs": [{ "gloss": "long", "notes": "size" }],
-      "tags": ["size"]
-    },
-    {
-      "id": "largo",
-      "headword": "largo",
-      "pos": "adj",
-      "pron": "/ˈlar.go/",
-      "defs": [{ "gloss": "wide", "notes": "size" }],
-      "tags": ["size"]
+      "tags": ["size", "swadesh"],
+      "src_id": "[cite: 624]"
     },
     {
       "id": "spesso",
@@ -246,15 +248,17 @@
       "pos": "adj",
       "pron": "/ˈspes.so/",
       "defs": [{ "gloss": "thick", "notes": "dimension" }],
-      "tags": ["size"]
+      "tags": ["size", "swadesh"],
+      "src_id": "[cite: 529]"
     },
     {
-      "id": "pesante",
-      "headword": "pesante",
-      "pos": "adj",
-      "pron": "/pe.ˈzan.te/",
-      "defs": [{ "gloss": "heavy", "notes": "weight" }],
-      "tags": ["property"]
+      "id": "peso",
+      "headword": "peso",
+      "pos": "n",
+      "pron": "/ˈpe.zo/",
+      "defs": [{ "gloss": "weight", "notes": "noun" }],
+      "tags": ["measure", "swadesh"],
+      "src_id": "[cite: 510]"
     },
     {
       "id": "picolo",
@@ -262,7 +266,8 @@
       "pos": "adj",
       "pron": "/ˈpi.ko.lo/",
       "defs": [{ "gloss": "small", "notes": "size" }],
-      "tags": ["size"]
+      "tags": ["size", "swadesh"],
+      "src_id": "[cite: 452]"
     },
     {
       "id": "curto",
@@ -270,23 +275,17 @@
       "pos": "adj",
       "pron": "/ˈkur.to/",
       "defs": [{ "gloss": "short", "notes": "size" }],
-      "tags": ["size"]
+      "tags": ["size", "swadesh"],
+      "src_id": "[cite: 512]"
     },
     {
       "id": "stricto",
       "headword": "stricto",
       "pos": "adj",
       "pron": "/ˈstrik.to/",
-      "defs": [{ "gloss": "narrow", "notes": "dimension" }],
-      "tags": ["size"]
-    },
-    {
-      "id": "tenue",
-      "headword": "tenue",
-      "pos": "adj",
-      "pron": "/ˈte.nwe/",
-      "defs": [{ "gloss": "thin", "notes": "dimension" }],
-      "tags": ["size"]
+      "defs": [{ "gloss": "narrow/strict", "notes": "dimension" }],
+      "tags": ["size", "swadesh"],
+      "src_id": "[cite: 660]"
     },
     {
       "id": "mulier",
@@ -294,23 +293,26 @@
       "pos": "n",
       "pron": "/mu.ˈli.er/",
       "defs": [{ "gloss": "woman", "notes": "person" }],
-      "tags": ["person"]
+      "tags": ["person", "swadesh"],
+      "src_id": "[cite: 316]"
     },
     {
       "id": "homo",
       "headword": "homo",
       "pos": "n",
       "pron": "/ˈo.mo/",
-      "defs": [{ "gloss": "man", "notes": "male adult / human" }],
-      "tags": ["person"]
+      "defs": [{ "gloss": "man", "notes": "person" }],
+      "tags": ["person", "swadesh"],
+      "src_id": "[cite: 323]"
     },
     {
       "id": "humano",
       "headword": "humano",
-      "pos": "n",
+      "pos": "adj/n",
       "pron": "/u.ˈma.no/",
-      "defs": [{ "gloss": "human", "notes": "species" }],
-      "tags": ["person"]
+      "defs": [{ "gloss": "human", "notes": "person" }],
+      "tags": ["person", "swadesh"],
+      "src_id": "[cite: 636]"
     },
     {
       "id": "infante",
@@ -318,7 +320,8 @@
       "pos": "n",
       "pron": "/in.ˈfan.te/",
       "defs": [{ "gloss": "child", "notes": "person" }],
-      "tags": ["person"]
+      "tags": ["person", "swadesh"],
+      "src_id": "[cite: 529]"
     },
     {
       "id": "uxor",
@@ -326,23 +329,8 @@
       "pos": "n",
       "pron": "/ˈuk.sor/",
       "defs": [{ "gloss": "wife", "notes": "family" }],
-      "tags": ["family"]
-    },
-    {
-      "id": "marito",
-      "headword": "marito",
-      "pos": "n",
-      "pron": "/ma.ˈri.to/",
-      "defs": [{ "gloss": "husband", "notes": "family" }],
-      "tags": ["family"]
-    },
-    {
-      "id": "matre",
-      "headword": "matre",
-      "pos": "n",
-      "pron": "/ˈma.tre/",
-      "defs": [{ "gloss": "mother", "notes": "family" }],
-      "tags": ["family"]
+      "tags": ["family", "swadesh"],
+      "src_id": "[cite: 316]"
     },
     {
       "id": "pater",
@@ -350,7 +338,8 @@
       "pos": "n",
       "pron": "/ˈpa.ter/",
       "defs": [{ "gloss": "father", "notes": "family" }],
-      "tags": ["family"]
+      "tags": ["family", "swadesh"],
+      "src_id": "[cite: 865]"
     },
     {
       "id": "animal",
@@ -358,15 +347,17 @@
       "pos": "n",
       "pron": "/a.ni.ˈmal/",
       "defs": [{ "gloss": "animal", "notes": "nature" }],
-      "tags": ["animal"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 331]"
     },
     {
       "id": "pisce",
       "headword": "pisce",
       "pos": "n",
-      "pron": "/ˈpis.tse/",
+      "pron": "/ˈpis.se/",
       "defs": [{ "gloss": "fish", "notes": "animal" }],
-      "tags": ["animal"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 316]"
     },
     {
       "id": "ave",
@@ -374,7 +365,8 @@
       "pos": "n",
       "pron": "/ˈa.ve/",
       "defs": [{ "gloss": "bird", "notes": "animal" }],
-      "tags": ["animal"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 331]"
     },
     {
       "id": "cane",
@@ -382,15 +374,8 @@
       "pos": "n",
       "pron": "/ˈka.ne/",
       "defs": [{ "gloss": "dog", "notes": "animal" }],
-      "tags": ["animal"]
-    },
-    {
-      "id": "pediculo",
-      "headword": "pedículo",
-      "pos": "n",
-      "pron": "/pe.ˈdi.ku.lo/",
-      "defs": [{ "gloss": "louse", "notes": "animal" }],
-      "tags": ["animal"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 514]"
     },
     {
       "id": "serpente",
@@ -398,7 +383,8 @@
       "pos": "n",
       "pron": "/ser.ˈpen.te/",
       "defs": [{ "gloss": "snake", "notes": "animal" }],
-      "tags": ["animal"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 527]"
     },
     {
       "id": "verme",
@@ -406,7 +392,8 @@
       "pos": "n",
       "pron": "/ˈver.me/",
       "defs": [{ "gloss": "worm", "notes": "animal" }],
-      "tags": ["animal"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 522]"
     },
     {
       "id": "arbore",
@@ -414,7 +401,8 @@
       "pos": "n",
       "pron": "/ˈar.bo.re/",
       "defs": [{ "gloss": "tree", "notes": "plant" }],
-      "tags": ["plant"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 515]"
     },
     {
       "id": "selva",
@@ -422,23 +410,17 @@
       "pos": "n",
       "pron": "/ˈsel.va/",
       "defs": [{ "gloss": "forest", "notes": "nature" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "baculo",
-      "headword": "baculo",
-      "pos": "n",
-      "pron": "/ˈba.ku.lo/",
-      "defs": [{ "gloss": "stick", "notes": "object" }],
-      "tags": ["object"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 531]"
     },
     {
       "id": "fructo",
       "headword": "fructo",
       "pos": "n",
       "pron": "/ˈfruk.to/",
-      "defs": [{ "gloss": "fruit", "notes": "food" }],
-      "tags": ["food"]
+      "defs": [{ "gloss": "fruit", "notes": "plant" }],
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 512]"
     },
     {
       "id": "semente",
@@ -446,7 +428,8 @@
       "pos": "n",
       "pron": "/se.ˈmen.te/",
       "defs": [{ "gloss": "seed", "notes": "plant" }],
-      "tags": ["plant"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 531]"
     },
     {
       "id": "folia",
@@ -454,23 +437,17 @@
       "pos": "n",
       "pron": "/ˈfo.li.a/",
       "defs": [{ "gloss": "leaf", "notes": "plant" }],
-      "tags": ["plant"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 520]"
     },
     {
       "id": "radice",
       "headword": "radice",
       "pos": "n",
-      "pron": "/ra.ˈdi.tse/",
+      "pron": "/ra.ˈdi.se/",
       "defs": [{ "gloss": "root", "notes": "plant" }],
-      "tags": ["plant"]
-    },
-    {
-      "id": "cortex",
-      "headword": "córtex",
-      "pos": "n",
-      "pron": "/ˈkor.teks/",
-      "defs": [{ "gloss": "bark", "notes": "plant" }],
-      "tags": ["plant"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 47]"
     },
     {
       "id": "flor",
@@ -478,15 +455,8 @@
       "pos": "n",
       "pron": "/flor/",
       "defs": [{ "gloss": "flower", "notes": "plant" }],
-      "tags": ["plant"]
-    },
-    {
-      "id": "herba",
-      "headword": "herba",
-      "pos": "n",
-      "pron": "/ˈer.ba/",
-      "defs": [{ "gloss": "grass", "notes": "plant" }],
-      "tags": ["plant"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 507]"
     },
     {
       "id": "corda",
@@ -494,7 +464,8 @@
       "pos": "n",
       "pron": "/ˈkor.da/",
       "defs": [{ "gloss": "rope", "notes": "object" }],
-      "tags": ["object"]
+      "tags": ["object", "swadesh"],
+      "src_id": "[cite: 514]"
     },
     {
       "id": "pele",
@@ -502,15 +473,17 @@
       "pos": "n",
       "pron": "/ˈpe.le/",
       "defs": [{ "gloss": "skin", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 452]"
     },
     {
       "id": "carne",
       "headword": "carne",
       "pos": "n",
       "pron": "/ˈcar.ne/",
-      "defs": [{ "gloss": "meat", "notes": "food" }],
-      "tags": ["food"]
+      "defs": [{ "gloss": "flesh/meat", "notes": "body" }],
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 531]"
     },
     {
       "id": "sangue",
@@ -518,7 +491,8 @@
       "pos": "n",
       "pron": "/ˈsan.gwe/",
       "defs": [{ "gloss": "blood", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 518]"
     },
     {
       "id": "osso",
@@ -526,15 +500,8 @@
       "pos": "n",
       "pron": "/ˈos.so/",
       "defs": [{ "gloss": "bone", "notes": "body" }],
-      "tags": ["body"]
-    },
-    {
-      "id": "gordura",
-      "headword": "gordura",
-      "pos": "n",
-      "pron": "/gor.ˈdu.ra/",
-      "defs": [{ "gloss": "fat", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 528]"
     },
     {
       "id": "ovo",
@@ -542,31 +509,26 @@
       "pos": "n",
       "pron": "/ˈo.vo/",
       "defs": [{ "gloss": "egg", "notes": "food" }],
-      "tags": ["food"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 527]"
     },
     {
       "id": "corno",
       "headword": "corno",
       "pos": "n",
-      "pron": "/ˈkor.no/",
+      "pron": "/ˈcor.no/",
       "defs": [{ "gloss": "horn", "notes": "animal" }],
-      "tags": ["animal"]
+      "tags": ["animal", "swadesh"],
+      "src_id": "[cite: 512]"
     },
     {
       "id": "cauda",
       "headword": "cauda",
       "pos": "n",
-      "pron": "/ˈkau.da/",
+      "pron": "/ˈcau.da/",
       "defs": [{ "gloss": "tail", "notes": "animal" }],
-      "tags": ["animal"]
-    },
-    {
-      "id": "pluma",
-      "headword": "pluma",
-      "pos": "n",
-      "pron": "/ˈplu.ma/",
-      "defs": [{ "gloss": "feather", "notes": "animal" }],
-      "tags": ["animal"]
+      "tags": ["animal", "swadesh"],
+      "src_id": "[cite: 853]"
     },
     {
       "id": "capilo",
@@ -574,7 +536,8 @@
       "pos": "n",
       "pron": "/ka.ˈpi.lo/",
       "defs": [{ "gloss": "hair", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 514]"
     },
     {
       "id": "capo",
@@ -582,7 +545,8 @@
       "pos": "n",
       "pron": "/ˈka.po/",
       "defs": [{ "gloss": "head", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 512]"
     },
     {
       "id": "orelia",
@@ -590,7 +554,8 @@
       "pos": "n",
       "pron": "/o.ˈre.li.a/",
       "defs": [{ "gloss": "ear", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 528]"
     },
     {
       "id": "oculo",
@@ -598,7 +563,8 @@
       "pos": "n",
       "pron": "/ˈo.ku.lo/",
       "defs": [{ "gloss": "eye", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 527]"
     },
     {
       "id": "naso",
@@ -606,7 +572,8 @@
       "pos": "n",
       "pron": "/ˈna.zo/",
       "defs": [{ "gloss": "nose", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 531]"
     },
     {
       "id": "boca",
@@ -614,7 +581,8 @@
       "pos": "n",
       "pron": "/ˈbo.ka/",
       "defs": [{ "gloss": "mouth", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 533]"
     },
     {
       "id": "dente",
@@ -622,23 +590,17 @@
       "pos": "n",
       "pron": "/ˈden.te/",
       "defs": [{ "gloss": "tooth", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 527]"
     },
     {
       "id": "lingua",
       "headword": "língua",
       "pos": "n",
       "pron": "/ˈlin.gwa/",
-      "defs": [{ "gloss": "tongue", "notes": "body" }],
-      "tags": ["body"]
-    },
-    {
-      "id": "ungula",
-      "headword": "ungula",
-      "pos": "n",
-      "pron": "/ˈun.gu.la/",
-      "defs": [{ "gloss": "fingernail", "notes": "body" }],
-      "tags": ["body"]
+      "defs": [{ "gloss": "tongue/language", "notes": "body" }],
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 26]"
     },
     {
       "id": "pede",
@@ -646,23 +608,8 @@
       "pos": "n",
       "pron": "/ˈpe.de/",
       "defs": [{ "gloss": "foot", "notes": "body" }],
-      "tags": ["body"]
-    },
-    {
-      "id": "gamba",
-      "headword": "gamba",
-      "pos": "n",
-      "pron": "/ˈgam.ba/",
-      "defs": [{ "gloss": "leg", "notes": "body" }],
-      "tags": ["body"]
-    },
-    {
-      "id": "genu",
-      "headword": "genu",
-      "pos": "n",
-      "pron": "/ˈje.nu/",
-      "defs": [{ "gloss": "knee", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 529]"
     },
     {
       "id": "mano",
@@ -670,7 +617,8 @@
       "pos": "n",
       "pron": "/ˈma.no/",
       "defs": [{ "gloss": "hand", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 530]"
     },
     {
       "id": "ala",
@@ -678,7 +626,8 @@
       "pos": "n",
       "pron": "/ˈa.la/",
       "defs": [{ "gloss": "wing", "notes": "animal" }],
-      "tags": ["animal"]
+      "tags": ["animal", "swadesh"],
+      "src_id": "[cite: 530]"
     },
     {
       "id": "ventre",
@@ -686,31 +635,8 @@
       "pos": "n",
       "pron": "/ˈven.tre/",
       "defs": [{ "gloss": "belly", "notes": "body" }],
-      "tags": ["body"]
-    },
-    {
-      "id": "intestinos",
-      "headword": "intestinos",
-      "pos": "n",
-      "pron": "/in.tes.ˈti.nos/",
-      "defs": [{ "gloss": "guts", "notes": "body" }],
-      "tags": ["body"]
-    },
-    {
-      "id": "colo",
-      "headword": "colo",
-      "pos": "n",
-      "pron": "/ˈko.lo/",
-      "defs": [{ "gloss": "neck", "notes": "body" }],
-      "tags": ["body"]
-    },
-    {
-      "id": "dorso",
-      "headword": "dorso",
-      "pos": "n",
-      "pron": "/ˈdor.so/",
-      "defs": [{ "gloss": "back", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 520]"
     },
     {
       "id": "pectino",
@@ -718,31 +644,26 @@
       "pos": "n",
       "pron": "/pek.ˈti.no/",
       "defs": [{ "gloss": "breast", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 531]"
     },
     {
       "id": "cordie",
       "headword": "córdie",
       "pos": "n",
-      "pron": "/ˈkor.di.e/",
+      "pron": "/ˈcor.di.e/",
       "defs": [{ "gloss": "heart", "notes": "body" }],
-      "tags": ["body"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 512]"
     },
     {
       "id": "ficato",
       "headword": "fícato",
       "pos": "n",
-      "pron": "/ˈfi.ka.to/",
+      "pron": "/ˈfi.ca.to/",
       "defs": [{ "gloss": "liver", "notes": "body" }],
-      "tags": ["body"]
-    },
-    {
-      "id": "biber",
-      "headword": "biber",
-      "pos": "v",
-      "pron": "/bi.ˈber/",
-      "defs": [{ "gloss": "to drink", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["body", "swadesh"],
+      "src_id": "[cite: 522]"
     },
     {
       "id": "manjar",
@@ -750,31 +671,8 @@
       "pos": "v",
       "pron": "/man.ˈjar/",
       "defs": [{ "gloss": "to eat", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "morder",
-      "headword": "morder",
-      "pos": "v",
-      "pron": "/mor.ˈder/",
-      "defs": [{ "gloss": "to bite", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "succer",
-      "headword": "succer",
-      "pos": "v",
-      "pron": "/suk.ˈtser/",
-      "defs": [{ "gloss": "to suck", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "sputar",
-      "headword": "sputar",
-      "pos": "v",
-      "pron": "/spu.ˈtar/",
-      "defs": [{ "gloss": "to spit", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 518]"
     },
     {
       "id": "vomitar",
@@ -782,15 +680,8 @@
       "pos": "v",
       "pron": "/vo.mi.ˈtar/",
       "defs": [{ "gloss": "to vomit", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "suflar",
-      "headword": "suflar",
-      "pos": "v",
-      "pron": "/su.ˈflar/",
-      "defs": [{ "gloss": "to blow", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 534]"
     },
     {
       "id": "respirar",
@@ -798,15 +689,8 @@
       "pos": "v",
       "pron": "/res.pi.ˈrar/",
       "defs": [{ "gloss": "to breathe", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "rider",
-      "headword": "rider",
-      "pos": "v",
-      "pron": "/ri.ˈder/",
-      "defs": [{ "gloss": "to laugh", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 659]"
     },
     {
       "id": "vider",
@@ -814,15 +698,8 @@
       "pos": "v",
       "pron": "/vi.ˈder/",
       "defs": [{ "gloss": "to see", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "audir",
-      "headword": "audir",
-      "pos": "v",
-      "pron": "/au.ˈdir/",
-      "defs": [{ "gloss": "to hear", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 24]"
     },
     {
       "id": "saper",
@@ -830,7 +707,8 @@
       "pos": "v",
       "pron": "/sa.ˈper/",
       "defs": [{ "gloss": "to know", "notes": "fact" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 164]"
     },
     {
       "id": "pensar",
@@ -838,31 +716,8 @@
       "pos": "v",
       "pron": "/pen.ˈsar/",
       "defs": [{ "gloss": "to think", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "odorar",
-      "headword": "odorar",
-      "pos": "v",
-      "pron": "/o.do.ˈrar/",
-      "defs": [{ "gloss": "to smell", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "temer",
-      "headword": "temer",
-      "pos": "v",
-      "pron": "/te.ˈmer/",
-      "defs": [{ "gloss": "to fear", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "dormir",
-      "headword": "dormir",
-      "pos": "v",
-      "pron": "/dor.ˈmir/",
-      "defs": [{ "gloss": "to sleep", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 657]"
     },
     {
       "id": "viver",
@@ -870,15 +725,8 @@
       "pos": "v",
       "pron": "/vi.ˈver/",
       "defs": [{ "gloss": "to live", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "morir",
-      "headword": "morir",
-      "pos": "v",
-      "pron": "/mo.ˈrir/",
-      "defs": [{ "gloss": "to die", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 307]"
     },
     {
       "id": "matar",
@@ -886,23 +734,8 @@
       "pos": "v",
       "pron": "/ma.ˈtar/",
       "defs": [{ "gloss": "to kill", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "combater",
-      "headword": "combater",
-      "pos": "v",
-      "pron": "/com.ba.ˈter/",
-      "defs": [{ "gloss": "to fight", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "caciar",
-      "headword": "caciar",
-      "pos": "v",
-      "pron": "/ka.ˈtsjar/",
-      "defs": [{ "gloss": "to hunt", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 316]"
     },
     {
       "id": "bater",
@@ -910,63 +743,17 @@
       "pos": "v",
       "pron": "/ba.ˈter/",
       "defs": [{ "gloss": "to hit", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "cortar",
-      "headword": "cortar",
-      "pos": "v",
-      "pron": "/cor.ˈtar/",
-      "defs": [{ "gloss": "to cut", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "fender",
-      "headword": "fender",
-      "pos": "v",
-      "pron": "/fen.ˈder/",
-      "defs": [{ "gloss": "to split", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 529]"
     },
     {
       "id": "pungir",
       "headword": "pungir",
       "pos": "v",
       "pron": "/pun.ˈjir/",
-      "defs": [{ "gloss": "to stab", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "gratar",
-      "headword": "gratar",
-      "pos": "v",
-      "pron": "/gra.ˈtar/",
-      "defs": [{ "gloss": "to scratch", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "cavar",
-      "headword": "cavar",
-      "pos": "v",
-      "pron": "/ca.ˈvar/",
-      "defs": [{ "gloss": "to dig", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "natar",
-      "headword": "natar",
-      "pos": "v",
-      "pron": "/na.ˈtar/",
-      "defs": [{ "gloss": "to swim", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "volar",
-      "headword": "volar",
-      "pos": "v",
-      "pron": "/vo.ˈlar/",
-      "defs": [{ "gloss": "to fly", "notes": "action" }],
-      "tags": ["action"]
+      "defs": [{ "gloss": "to stab/puncture", "notes": "action" }],
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 452]"
     },
     {
       "id": "caminar",
@@ -974,7 +761,8 @@
       "pos": "v",
       "pron": "/ca.mi.ˈnar/",
       "defs": [{ "gloss": "to walk", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 106]"
     },
     {
       "id": "venir",
@@ -982,23 +770,8 @@
       "pos": "v",
       "pron": "/ve.ˈnir/",
       "defs": [{ "gloss": "to come", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "jacer",
-      "headword": "jacer",
-      "pos": "v",
-      "pron": "/ja.ˈtser/",
-      "defs": [{ "gloss": "to lie", "notes": "state" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "seder",
-      "headword": "seder",
-      "pos": "v",
-      "pron": "/se.ˈder/",
-      "defs": [{ "gloss": "to sit", "notes": "state" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 218]"
     },
     {
       "id": "star",
@@ -1006,7 +779,8 @@
       "pos": "v",
       "pron": "/star/",
       "defs": [{ "gloss": "to stand", "notes": "state" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 281]"
     },
     {
       "id": "girar",
@@ -1014,15 +788,8 @@
       "pos": "v",
       "pron": "/ji.ˈrar/",
       "defs": [{ "gloss": "to turn", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "cader",
-      "headword": "cader",
-      "pos": "v",
-      "pron": "/ca.ˈder/",
-      "defs": [{ "gloss": "to fall", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 623]"
     },
     {
       "id": "donar",
@@ -1030,47 +797,8 @@
       "pos": "v",
       "pron": "/do.ˈnar/",
       "defs": [{ "gloss": "to give", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "tener",
-      "headword": "tener",
-      "pos": "v",
-      "pron": "/te.ˈner/",
-      "defs": [{ "gloss": "to hold", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "premer",
-      "headword": "premer",
-      "pos": "v",
-      "pron": "/pre.ˈmer/",
-      "defs": [{ "gloss": "to squeeze", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "friccionar",
-      "headword": "friccionar",
-      "pos": "v",
-      "pron": "/frik.tsjo.ˈnar/",
-      "defs": [{ "gloss": "to rub", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "lavar",
-      "headword": "lavar",
-      "pos": "v",
-      "pron": "/la.ˈvar/",
-      "defs": [{ "gloss": "to wash", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "limpar",
-      "headword": "limpar",
-      "pos": "v",
-      "pron": "/lim.ˈpar/",
-      "defs": [{ "gloss": "to wipe", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 26]"
     },
     {
       "id": "traher",
@@ -1078,15 +806,8 @@
       "pos": "v",
       "pron": "/tra.ˈer/",
       "defs": [{ "gloss": "to pull", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "impeller",
-      "headword": "impeller",
-      "pos": "v",
-      "pron": "/im.pel.ˈler/",
-      "defs": [{ "gloss": "to push", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 381]"
     },
     {
       "id": "jectar",
@@ -1094,7 +815,8 @@
       "pos": "v",
       "pron": "/jek.ˈtar/",
       "defs": [{ "gloss": "to throw", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 640]"
     },
     {
       "id": "ligar",
@@ -1102,15 +824,8 @@
       "pos": "v",
       "pron": "/li.ˈgar/",
       "defs": [{ "gloss": "to tie", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "coser",
-      "headword": "coser",
-      "pos": "v",
-      "pron": "/co.ˈzer/",
-      "defs": [{ "gloss": "to sew", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 49]"
     },
     {
       "id": "computar",
@@ -1118,23 +833,17 @@
       "pos": "v",
       "pron": "/com.pu.ˈtar/",
       "defs": [{ "gloss": "to count", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 80]"
     },
     {
       "id": "dicer",
       "headword": "dicer",
       "pos": "v",
-      "pron": "/di.ˈtser/",
+      "pron": "/di.ˈser/",
       "defs": [{ "gloss": "to say", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "cantar",
-      "headword": "cantar",
-      "pos": "v",
-      "pron": "/can.ˈtar/",
-      "defs": [{ "gloss": "to sing", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 833]"
     },
     {
       "id": "jocar",
@@ -1142,39 +851,17 @@
       "pos": "v",
       "pron": "/jo.ˈkar/",
       "defs": [{ "gloss": "to play", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "flutuar",
-      "headword": "flutuar",
-      "pos": "v",
-      "pron": "/flu.tu.ˈar/",
-      "defs": [{ "gloss": "to float", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 641]"
     },
     {
       "id": "currer",
       "headword": "currer",
       "pos": "v",
       "pron": "/cur.ˈrer/",
-      "defs": [{ "gloss": "to flow", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "gelar",
-      "headword": "gelar",
-      "pos": "v",
-      "pron": "/je.ˈlar/",
-      "defs": [{ "gloss": "to freeze", "notes": "action" }],
-      "tags": ["action"]
-    },
-    {
-      "id": "inflar",
-      "headword": "inflar",
-      "pos": "v",
-      "pron": "/in.ˈflar/",
-      "defs": [{ "gloss": "to swell", "notes": "action" }],
-      "tags": ["action"]
+      "defs": [{ "gloss": "to flow/run", "notes": "action" }],
+      "tags": ["action", "swadesh"],
+      "src_id": "[cite: 530]"
     },
     {
       "id": "sol",
@@ -1182,15 +869,8 @@
       "pos": "n",
       "pron": "/sol/",
       "defs": [{ "gloss": "sun", "notes": "nature" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "luna",
-      "headword": "luna",
-      "pos": "n",
-      "pron": "/ˈlu.na/",
-      "defs": [{ "gloss": "moon", "notes": "nature" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 522]"
     },
     {
       "id": "stela",
@@ -1198,7 +878,8 @@
       "pos": "n",
       "pron": "/ˈste.la/",
       "defs": [{ "gloss": "star", "notes": "nature" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 510]"
     },
     {
       "id": "aqua",
@@ -1206,15 +887,8 @@
       "pos": "n",
       "pron": "/ˈa.kwa/",
       "defs": [{ "gloss": "water", "notes": "nature" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "pluvia",
-      "headword": "plúvia",
-      "pos": "n",
-      "pron": "/ˈplu.vi.a/",
-      "defs": [{ "gloss": "rain", "notes": "nature" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 330]"
     },
     {
       "id": "fluvio",
@@ -1222,15 +896,8 @@
       "pos": "n",
       "pron": "/ˈflu.vi.o/",
       "defs": [{ "gloss": "river", "notes": "nature" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "laco",
-      "headword": "laco",
-      "pos": "n",
-      "pron": "/ˈla.ko/",
-      "defs": [{ "gloss": "lake", "notes": "nature" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 529]"
     },
     {
       "id": "mar",
@@ -1238,15 +905,8 @@
       "pos": "n",
       "pron": "/mar/",
       "defs": [{ "gloss": "sea", "notes": "nature" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "sal",
-      "headword": "sal",
-      "pos": "n",
-      "pron": "/sal/",
-      "defs": [{ "gloss": "salt", "notes": "substance" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 533]"
     },
     {
       "id": "petra",
@@ -1254,23 +914,8 @@
       "pos": "n",
       "pron": "/ˈpe.tra/",
       "defs": [{ "gloss": "stone", "notes": "nature" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "arena",
-      "headword": "arena",
-      "pos": "n",
-      "pron": "/a.ˈre.na/",
-      "defs": [{ "gloss": "sand", "notes": "nature" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "po",
-      "headword": "pó",
-      "pos": "n",
-      "pron": "/po/",
-      "defs": [{ "gloss": "dust", "notes": "substance" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 526]"
     },
     {
       "id": "terra",
@@ -1278,7 +923,8 @@
       "pos": "n",
       "pron": "/ˈter.ra/",
       "defs": [{ "gloss": "earth", "notes": "nature" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 450]"
     },
     {
       "id": "nube",
@@ -1286,23 +932,17 @@
       "pos": "n",
       "pron": "/ˈnu.be/",
       "defs": [{ "gloss": "cloud", "notes": "nature" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "nebula",
-      "headword": "nébula",
-      "pos": "n",
-      "pron": "/ˈne.bu.la/",
-      "defs": [{ "gloss": "fog", "notes": "nature" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 526]"
     },
     {
       "id": "celo",
       "headword": "celo",
       "pos": "n",
-      "pron": "/ˈtse.lo/",
+      "pron": "/ˈse.lo/",
       "defs": [{ "gloss": "sky", "notes": "nature" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 616]"
     },
     {
       "id": "vento",
@@ -1310,15 +950,8 @@
       "pos": "n",
       "pron": "/ˈven.to/",
       "defs": [{ "gloss": "wind", "notes": "nature" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "nive",
-      "headword": "nive",
-      "pos": "n",
-      "pron": "/ˈni.ve/",
-      "defs": [{ "gloss": "snow", "notes": "nature" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 507]"
     },
     {
       "id": "gelo",
@@ -1326,7 +959,8 @@
       "pos": "n",
       "pron": "/ˈje.lo/",
       "defs": [{ "gloss": "ice", "notes": "nature" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 515]"
     },
     {
       "id": "fumo",
@@ -1334,7 +968,8 @@
       "pos": "n",
       "pron": "/ˈfu.mo/",
       "defs": [{ "gloss": "smoke", "notes": "substance" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 512]"
     },
     {
       "id": "foco",
@@ -1342,31 +977,17 @@
       "pos": "n",
       "pron": "/ˈfo.ko/",
       "defs": [{ "gloss": "fire", "notes": "nature" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "cinere",
-      "headword": "cínere",
-      "pos": "n",
-      "pron": "/ˈtsi.ne.re/",
-      "defs": [{ "gloss": "ash", "notes": "substance" }],
-      "tags": ["nature"]
-    },
-    {
-      "id": "arder",
-      "headword": "arder",
-      "pos": "v",
-      "pron": "/ar.ˈder/",
-      "defs": [{ "gloss": "to burn", "notes": "action" }],
-      "tags": ["action"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 523]"
     },
     {
       "id": "via",
       "headword": "via",
       "pos": "n",
       "pron": "/ˈvi.a/",
-      "defs": [{ "gloss": "road", "notes": "object" }],
-      "tags": ["object"]
+      "defs": [{ "gloss": "path/way", "notes": "object" }],
+      "tags": ["object", "swadesh"],
+      "src_id": "[cite: 36]"
     },
     {
       "id": "monte",
@@ -1374,7 +995,8 @@
       "pos": "n",
       "pron": "/ˈmon.te/",
       "defs": [{ "gloss": "mountain", "notes": "nature" }],
-      "tags": ["nature"]
+      "tags": ["nature", "swadesh"],
+      "src_id": "[cite: 528]"
     },
     {
       "id": "rubro",
@@ -1382,15 +1004,8 @@
       "pos": "adj",
       "pron": "/ˈru.bro/",
       "defs": [{ "gloss": "red", "notes": "color" }],
-      "tags": ["color"]
-    },
-    {
-      "id": "verde",
-      "headword": "verde",
-      "pos": "adj",
-      "pron": "/ˈver.de/",
-      "defs": [{ "gloss": "green", "notes": "color" }],
-      "tags": ["color"]
+      "tags": ["color", "swadesh"],
+      "src_id": "[cite: 519]"
     },
     {
       "id": "amarelo",
@@ -1398,7 +1013,8 @@
       "pos": "adj",
       "pron": "/a.ma.ˈre.lo/",
       "defs": [{ "gloss": "yellow", "notes": "color" }],
-      "tags": ["color"]
+      "tags": ["color", "swadesh"],
+      "src_id": "[cite: 516]"
     },
     {
       "id": "blanco",
@@ -1406,7 +1022,8 @@
       "pos": "adj",
       "pron": "/ˈblan.ko/",
       "defs": [{ "gloss": "white", "notes": "color" }],
-      "tags": ["color"]
+      "tags": ["color", "swadesh"],
+      "src_id": "[cite: 526]"
     },
     {
       "id": "negro",
@@ -1414,15 +1031,8 @@
       "pos": "adj",
       "pron": "/ˈne.gro/",
       "defs": [{ "gloss": "black", "notes": "color" }],
-      "tags": ["color"]
-    },
-    {
-      "id": "nocte",
-      "headword": "nocte",
-      "pos": "n",
-      "pron": "/ˈnok.te/",
-      "defs": [{ "gloss": "night", "notes": "time" }],
-      "tags": ["time"]
+      "tags": ["color", "swadesh"],
+      "src_id": "[cite: 526]"
     },
     {
       "id": "dia",
@@ -1430,31 +1040,26 @@
       "pos": "n",
       "pron": "/ˈdi.a/",
       "defs": [{ "gloss": "day", "notes": "time" }],
-      "tags": ["time"]
+      "tags": ["time", "swadesh"],
+      "src_id": "[cite: 136]"
     },
     {
-      "id": "ano",
-      "headword": "ano",
+      "id": "calor",
+      "headword": "calor",
       "pos": "n",
-      "pron": "/ˈa.no/",
-      "defs": [{ "gloss": "year", "notes": "time" }],
-      "tags": ["time"]
-    },
-    {
-      "id": "calido",
-      "headword": "calido",
-      "pos": "adj",
-      "pron": "/ˈka.li.do/",
-      "defs": [{ "gloss": "warm", "notes": "temperature" }],
-      "tags": ["temperature"]
+      "pron": "/ka.ˈlor/",
+      "defs": [{ "gloss": "heat/warm", "notes": "temperature" }],
+      "tags": ["temperature", "swadesh"],
+      "src_id": "[cite: 534]"
     },
     {
       "id": "frigor",
       "headword": "frígor",
       "pos": "n",
       "pron": "/ˈfri.gor/",
-      "defs": [{ "gloss": "cold", "notes": "noun usage" }],
-      "tags": ["temperature"]
+      "defs": [{ "gloss": "cold", "notes": "temperature" }],
+      "tags": ["temperature", "swadesh"],
+      "src_id": "[cite: 515]"
     },
     {
       "id": "pleno",
@@ -1462,7 +1067,8 @@
       "pos": "adj",
       "pron": "/ˈple.no/",
       "defs": [{ "gloss": "full", "notes": "state" }],
-      "tags": ["state"]
+      "tags": ["state", "swadesh"],
+      "src_id": "[cite: 90]"
     },
     {
       "id": "novo",
@@ -1470,7 +1076,8 @@
       "pos": "adj",
       "pron": "/ˈno.vo/",
       "defs": [{ "gloss": "new", "notes": "state" }],
-      "tags": ["state"]
+      "tags": ["state", "swadesh"],
+      "src_id": "[cite: 60]"
     },
     {
       "id": "antiquo",
@@ -1478,7 +1085,8 @@
       "pos": "adj",
       "pron": "/an.ˈti.kwo/",
       "defs": [{ "gloss": "old", "notes": "state" }],
-      "tags": ["state"]
+      "tags": ["state", "swadesh"],
+      "src_id": "[cite: 28]"
     },
     {
       "id": "bono",
@@ -1486,7 +1094,8 @@
       "pos": "adj",
       "pron": "/ˈbo.no/",
       "defs": [{ "gloss": "good", "notes": "quality" }],
-      "tags": ["quality"]
+      "tags": ["quality", "swadesh"],
+      "src_id": "[cite: 70]"
     },
     {
       "id": "malo",
@@ -1494,7 +1103,8 @@
       "pos": "adj",
       "pron": "/ˈma.lo/",
       "defs": [{ "gloss": "bad", "notes": "quality" }],
-      "tags": ["quality"]
+      "tags": ["quality", "swadesh"],
+      "src_id": "[cite: 456]"
     },
     {
       "id": "putre",
@@ -1502,15 +1112,8 @@
       "pos": "adj",
       "pron": "/ˈpu.tre/",
       "defs": [{ "gloss": "rotten", "notes": "state" }],
-      "tags": ["state"]
-    },
-    {
-      "id": "sujo",
-      "headword": "sujo",
-      "pos": "adj",
-      "pron": "/ˈsu.jo/",
-      "defs": [{ "gloss": "dirty", "notes": "state" }],
-      "tags": ["state"]
+      "tags": ["state", "swadesh"],
+      "src_id": "[cite: 531]"
     },
     {
       "id": "directo",
@@ -1518,15 +1121,8 @@
       "pos": "adj",
       "pron": "/di.ˈrek.to/",
       "defs": [{ "gloss": "straight", "notes": "shape" }],
-      "tags": ["shape"]
-    },
-    {
-      "id": "rotundo",
-      "headword": "rotundo",
-      "pos": "adj",
-      "pron": "/ro.ˈtun.do/",
-      "defs": [{ "gloss": "round", "notes": "shape" }],
-      "tags": ["shape"]
+      "tags": ["shape", "swadesh"],
+      "src_id": "[cite: 311]"
     },
     {
       "id": "acuto",
@@ -1534,23 +1130,8 @@
       "pos": "adj",
       "pron": "/a.ˈku.to/",
       "defs": [{ "gloss": "sharp", "notes": "property" }],
-      "tags": ["property"]
-    },
-    {
-      "id": "obtuso",
-      "headword": "obtuso",
-      "pos": "adj",
-      "pron": "/ob.ˈtu.zo/",
-      "defs": [{ "gloss": "dull", "notes": "property" }],
-      "tags": ["property"]
-    },
-    {
-      "id": "lisio",
-      "headword": "lisio",
-      "pos": "adj",
-      "pron": "/ˈli.zi.o/",
-      "defs": [{ "gloss": "smooth", "notes": "property" }],
-      "tags": ["property"]
+      "tags": ["property", "swadesh"],
+      "src_id": "[cite: 861]"
     },
     {
       "id": "humido",
@@ -1558,7 +1139,8 @@
       "pos": "adj",
       "pron": "/ˈu.mi.do/",
       "defs": [{ "gloss": "wet", "notes": "state" }],
-      "tags": ["state"]
+      "tags": ["state", "swadesh"],
+      "src_id": "[cite: 523]"
     },
     {
       "id": "sico",
@@ -1566,7 +1148,8 @@
       "pos": "adj",
       "pron": "/ˈsi.ko/",
       "defs": [{ "gloss": "dry", "notes": "state" }],
-      "tags": ["state"]
+      "tags": ["state", "swadesh"],
+      "src_id": "[cite: 534]"
     },
     {
       "id": "correcto",
@@ -1574,7 +1157,8 @@
       "pos": "adj",
       "pron": "/cor.ˈrek.to/",
       "defs": [{ "gloss": "correct", "notes": "quality" }],
-      "tags": ["quality"]
+      "tags": ["quality", "swadesh"],
+      "src_id": "[cite: 257]"
     },
     {
       "id": "proximo",
@@ -1582,7 +1166,8 @@
       "pos": "adj",
       "pron": "/ˈproks.si.mo/",
       "defs": [{ "gloss": "near", "notes": "location" }],
-      "tags": ["location"]
+      "tags": ["location", "swadesh"],
+      "src_id": "[cite: 213]"
     },
     {
       "id": "longe",
@@ -1590,31 +1175,17 @@
       "pos": "adv",
       "pron": "/ˈlon.je/",
       "defs": [{ "gloss": "far", "notes": "location" }],
-      "tags": ["location"]
-    },
-    {
-      "id": "dextra",
-      "headword": "dextra",
-      "pos": "adj",
-      "pron": "/ˈdeks.tra/",
-      "defs": [{ "gloss": "right", "notes": "direction" }],
-      "tags": ["location"]
-    },
-    {
-      "id": "sinistra",
-      "headword": "sinistra",
-      "pos": "adj",
-      "pron": "/si.ˈnis.tra/",
-      "defs": [{ "gloss": "left", "notes": "direction" }],
-      "tags": ["location"]
+      "tags": ["location", "swadesh"],
+      "src_id": "[cite: 246]"
     },
     {
       "id": "a",
       "headword": "a",
       "pos": "prep",
       "pron": "/a/",
-      "defs": [{ "gloss": "at", "notes": "preposition" }],
-      "tags": ["preposition"]
+      "defs": [{ "gloss": "at/to", "notes": "preposition" }],
+      "tags": ["preposition", "swadesh"],
+      "src_id": "[cite: 343]"
     },
     {
       "id": "in",
@@ -1622,7 +1193,8 @@
       "pos": "prep",
       "pron": "/in/",
       "defs": [{ "gloss": "in", "notes": "preposition" }],
-      "tags": ["preposition"]
+      "tags": ["preposition", "swadesh"],
+      "src_id": "[cite: 518]"
     },
     {
       "id": "con",
@@ -1630,7 +1202,8 @@
       "pos": "prep",
       "pron": "/kon/",
       "defs": [{ "gloss": "with", "notes": "preposition" }],
-      "tags": ["preposition"]
+      "tags": ["preposition", "swadesh"],
+      "src_id": "[cite: 531]"
     },
     {
       "id": "e",
@@ -1638,7 +1211,8 @@
       "pos": "conj",
       "pron": "/e/",
       "defs": [{ "gloss": "and", "notes": "conjunction" }],
-      "tags": ["conjunction"]
+      "tags": ["conjunction", "swadesh"],
+      "src_id": "[cite: 343]"
     },
     {
       "id": "se",
@@ -1646,7 +1220,8 @@
       "pos": "conj",
       "pron": "/se/",
       "defs": [{ "gloss": "if", "notes": "conjunction" }],
-      "tags": ["conjunction"]
+      "tags": ["conjunction", "swadesh"],
+      "src_id": "[cite: 456]"
     },
     {
       "id": "perque",
@@ -1654,7 +1229,8 @@
       "pos": "conj",
       "pron": "/per.ˈke/",
       "defs": [{ "gloss": "because", "notes": "conjunction" }],
-      "tags": ["conjunction"]
+      "tags": ["conjunction", "swadesh"],
+      "src_id": "[cite: 27]"
     },
     {
       "id": "nomine",
@@ -1662,7 +1238,1088 @@
       "pos": "n",
       "pron": "/ˈno.mi.ne/",
       "defs": [{ "gloss": "name", "notes": "abstract" }],
-      "tags": ["noun"]
+      "tags": ["noun", "swadesh"],
+      "src_id": "[cite: 30]"
+    },
+    {
+      "id": "veritate",
+      "headword": "veritate",
+      "pos": "n",
+      "pron": "/ve.ri.ˈta.te/",
+      "defs": [{ "gloss": "truth", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 28]"
+    },
+    {
+      "id": "humanitate",
+      "headword": "humanitate",
+      "pos": "n",
+      "pron": "/u.ma.ni.ˈta.te/",
+      "defs": [{ "gloss": "humanity", "notes": "abstract" }],
+      "tags": ["society", "extra"],
+      "src_id": "[cite: 836]"
+    },
+    {
+      "id": "civilizacion",
+      "headword": "civilizacion",
+      "pos": "n",
+      "pron": "/si.vi.li.za.ˈsjon/",
+      "defs": [{ "gloss": "civilization", "notes": "abstract" }],
+      "tags": ["society", "extra"],
+      "src_id": "[cite: 97]"
+    },
+    {
+      "id": "urbe",
+      "headword": "urbe",
+      "pos": "n",
+      "pron": "/ˈur.be/",
+      "defs": [{ "gloss": "large city", "notes": "place" }],
+      "tags": ["location", "extra"],
+      "src_id": "[cite: 530]"
+    },
+    {
+      "id": "casa",
+      "headword": "casa",
+      "pos": "n",
+      "pron": "/ˈka.za/",
+      "defs": [{ "gloss": "house", "notes": "building" }],
+      "tags": ["building", "extra"],
+      "src_id": "[cite: 516]"
+    },
+    {
+      "id": "porta",
+      "headword": "porta",
+      "pos": "n",
+      "pron": "/ˈpor.ta/",
+      "defs": [{ "gloss": "door", "notes": "object" }],
+      "tags": ["building", "extra"],
+      "src_id": "[cite: 843]"
+    },
+    {
+      "id": "scola",
+      "headword": "scola",
+      "pos": "n",
+      "pron": "/ˈsko.la/",
+      "defs": [{ "gloss": "school", "notes": "education" }],
+      "tags": ["education", "extra"],
+      "src_id": "[cite: 662]"
+    },
+    {
+      "id": "libro",
+      "headword": "libro",
+      "pos": "n",
+      "pron": "/ˈli.bro/",
+      "defs": [{ "gloss": "book", "notes": "object" }],
+      "tags": ["education", "extra"],
+      "src_id": "[cite: 5]"
+    },
+    {
+      "id": "carta",
+      "headword": "carta",
+      "pos": "n",
+      "pron": "/ˈkar.ta/",
+      "defs": [{ "gloss": "paper/letter", "notes": "object" }],
+      "tags": ["object", "extra"],
+      "src_id": "[cite: 512]"
+    },
+    {
+      "id": "sciencia",
+      "headword": "sciéncia",
+      "pos": "n",
+      "pron": "/ˈsjen.si.a/",
+      "defs": [{ "gloss": "science", "notes": "abstract" }],
+      "tags": ["education", "extra"],
+      "src_id": "[cite: 280]"
+    },
+    {
+      "id": "arte",
+      "headword": "arte",
+      "pos": "n",
+      "pron": "/ˈar.te/",
+      "defs": [{ "gloss": "art", "notes": "abstract" }],
+      "tags": ["culture", "extra"],
+      "src_id": "[cite: 753]"
+    },
+    {
+      "id": "frater",
+      "headword": "fráter",
+      "pos": "n",
+      "pron": "/ˈfra.ter/",
+      "defs": [{ "gloss": "brother", "notes": "family" }],
+      "tags": ["family", "extra"],
+      "src_id": "[cite: 507]"
+    },
+    {
+      "id": "amico",
+      "headword": "amico",
+      "pos": "n",
+      "pron": "/a.ˈmi.co/",
+      "defs": [{ "gloss": "friend", "notes": "person" }],
+      "tags": ["society", "extra"],
+      "src_id": "[cite: 136]"
+    },
+    {
+      "id": "re",
+      "headword": "re",
+      "pos": "n",
+      "pron": "/re/",
+      "defs": [{ "gloss": "king", "notes": "politics" }],
+      "tags": ["politics", "extra"],
+      "src_id": "[cite: 866]"
+    },
+    {
+      "id": "imperio",
+      "headword": "império",
+      "pos": "n",
+      "pron": "/im.ˈpe.ri.o/",
+      "defs": [{ "gloss": "empire", "notes": "politics" }],
+      "tags": ["politics", "extra"],
+      "src_id": "[cite: 80]"
+    },
+    {
+      "id": "lege",
+      "headword": "lege",
+      "pos": "n",
+      "pron": "/ˈle.je/",
+      "defs": [{ "gloss": "law", "notes": "politics" }],
+      "tags": ["politics", "extra"],
+      "src_id": "[cite: 526]"
+    },
+    {
+      "id": "guerra",
+      "headword": "guerra",
+      "pos": "n",
+      "pron": "/ˈger.ra/",
+      "defs": [{ "gloss": "war", "notes": "society" }],
+      "tags": ["society", "extra"],
+      "src_id": "[cite: 122]"
+    },
+    {
+      "id": "nave",
+      "headword": "nave",
+      "pos": "n",
+      "pron": "/ˈna.ve/",
+      "defs": [{ "gloss": "ship", "notes": "transport" }],
+      "tags": ["transport", "extra"],
+      "src_id": "[cite: 846]"
+    },
+    {
+      "id": "barca",
+      "headword": "barca",
+      "pos": "n",
+      "pron": "/ˈbar.ka/",
+      "defs": [{ "gloss": "boat", "notes": "transport" }],
+      "tags": ["transport", "extra"],
+      "src_id": "[cite: 531]"
+    },
+    {
+      "id": "machina",
+      "headword": "máquina",
+      "pos": "n",
+      "pron": "/ˈma.ki.na/",
+      "defs": [{ "gloss": "machine", "notes": "technology" }],
+      "tags": ["technology", "extra"],
+      "src_id": "[cite: 496]"
+    },
+    {
+      "id": "banco",
+      "headword": "banco",
+      "pos": "n",
+      "pron": "/ˈban.ko/",
+      "defs": [{ "gloss": "bank/bench", "notes": "economy/object" }],
+      "tags": ["economy", "extra"],
+      "src_id": "[cite: 648]"
+    },
+    {
+      "id": "labor",
+      "headword": "labor",
+      "pos": "n",
+      "pron": "/la.ˈbor/",
+      "defs": [{ "gloss": "work", "notes": "abstract" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 534]"
+    },
+    {
+      "id": "telegrafo",
+      "headword": "telégrafo",
+      "pos": "n",
+      "pron": "/te.ˈle.gra.fo/",
+      "defs": [{ "gloss": "telegraph", "notes": "technology" }],
+      "tags": ["technology", "extra"],
+      "src_id": "[cite: 316]"
+    },
+    {
+      "id": "biologia",
+      "headword": "biologia",
+      "pos": "n",
+      "pron": "/bi.o.lo.ˈji.a/",
+      "defs": [{ "gloss": "biology", "notes": "science" }],
+      "tags": ["science", "extra"],
+      "src_id": "[cite: 450]"
+    },
+    {
+      "id": "facil",
+      "headword": "fácil",
+      "pos": "adj",
+      "pron": "/ˈfa.sil/",
+      "defs": [{ "gloss": "easy", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 864]"
+    },
+    {
+      "id": "difficil",
+      "headword": "difícil",
+      "pos": "adj",
+      "pron": "/di.ˈfi.sil/",
+      "defs": [{ "gloss": "difficult", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 33]"
+    },
+    {
+      "id": "possibil",
+      "headword": "possíbil",
+      "pos": "adj",
+      "pron": "/pos.ˈsi.bil/",
+      "defs": [{ "gloss": "possible", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 864]"
+    },
+    {
+      "id": "probabil",
+      "headword": "probábil",
+      "pos": "adj",
+      "pron": "/pro.ˈba.bil/",
+      "defs": [{ "gloss": "probable", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 155]"
+    },
+    {
+      "id": "util",
+      "headword": "útil",
+      "pos": "adj",
+      "pron": "/ˈu.til/",
+      "defs": [{ "gloss": "useful", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 186]"
+    },
+    {
+      "id": "necessario",
+      "headword": "necessário",
+      "pos": "adj",
+      "pron": "/ne.ses.ˈsa.ri.o/",
+      "defs": [{ "gloss": "necessary", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 106]"
+    },
+    {
+      "id": "certo",
+      "headword": "certo",
+      "pos": "adj",
+      "pron": "/ˈser.to/",
+      "defs": [{ "gloss": "certain", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 89]"
+    },
+    {
+      "id": "vero",
+      "headword": "vero",
+      "pos": "adj",
+      "pron": "/ˈve.ro/",
+      "defs": [{ "gloss": "true", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 232]"
+    },
+    {
+      "id": "falso",
+      "headword": "falso",
+      "pos": "adj",
+      "pron": "/ˈfal.so/",
+      "defs": [{ "gloss": "false", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 712]"
+    },
+    {
+      "id": "rapido",
+      "headword": "rápido",
+      "pos": "adj",
+      "pron": "/ˈra.pi.do/",
+      "defs": [{ "gloss": "fast", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 82]"
+    },
+    {
+      "id": "forte",
+      "headword": "forte",
+      "pos": "adj",
+      "pron": "/ˈfor.te/",
+      "defs": [{ "gloss": "strong", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 34]"
+    },
+    {
+      "id": "rico",
+      "headword": "rico",
+      "pos": "adj",
+      "pron": "/ˈri.ko/",
+      "defs": [{ "gloss": "rich", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 719]"
+    },
+    {
+      "id": "dulce",
+      "headword": "dulce",
+      "pos": "adj",
+      "pron": "/ˈdul.se/",
+      "defs": [{ "gloss": "sweet", "notes": "taste" }],
+      "tags": ["taste", "extra"],
+      "src_id": "[cite: 520]"
+    },
+    {
+      "id": "stulto",
+      "headword": "stulto",
+      "pos": "adj",
+      "pron": "/ˈstul.to/",
+      "defs": [{ "gloss": "stupid", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 726]"
+    },
+    {
+      "id": "studiar",
+      "headword": "stúdio",
+      "pos": "n",
+      "pron": "/ˈstu.di.o/",
+      "defs": [{ "gloss": "study", "notes": "action/noun" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 660]"
+    },
+    {
+      "id": "leger",
+      "headword": "leger",
+      "pos": "v",
+      "pron": "/le.ˈjer/",
+      "defs": [{ "gloss": "to read", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 69]"
+    },
+    {
+      "id": "scriber",
+      "headword": "scriber",
+      "pos": "v",
+      "pron": "/skri.ˈber/",
+      "defs": [{ "gloss": "to write", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 316]"
+    },
+    {
+      "id": "compreender",
+      "headword": "compreender",
+      "pos": "v",
+      "pron": "/com.pre.en.ˈder/",
+      "defs": [{ "gloss": "to understand", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 52]"
+    },
+    {
+      "id": "aprender",
+      "headword": "aprender",
+      "pos": "v",
+      "pron": "/a.pren.ˈder/",
+      "defs": [{ "gloss": "to learn", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 81]"
+    },
+    {
+      "id": "explicar",
+      "headword": "explicar",
+      "pos": "v",
+      "pron": "/eks.pli.ˈkar/",
+      "defs": [{ "gloss": "to explain", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 25]"
+    },
+    {
+      "id": "facer",
+      "headword": "facer",
+      "pos": "v",
+      "pron": "/fa.ˈser/",
+      "defs": [{ "gloss": "to do/make", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 80]"
+    },
+    {
+      "id": "destruir",
+      "headword": "destruir",
+      "pos": "v",
+      "pron": "/des.tru.ˈir/",
+      "defs": [{ "gloss": "to destroy", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 106]"
+    },
+    {
+      "id": "entrar",
+      "headword": "entrar",
+      "pos": "v",
+      "pron": "/en.ˈtrar/",
+      "defs": [{ "gloss": "to enter", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 325]"
+    },
+    {
+      "id": "sortir",
+      "headword": "sortir",
+      "pos": "v",
+      "pron": "/sor.ˈtir/",
+      "defs": [{ "gloss": "to exit/go out", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 258]"
+    },
+    {
+      "id": "principiar",
+      "headword": "principiar",
+      "pos": "v",
+      "pron": "/prin.si.pi.ˈar/",
+      "defs": [{ "gloss": "to begin", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 170]"
+    },
+    {
+      "id": "continuar",
+      "headword": "continuar",
+      "pos": "v",
+      "pron": "/con.ti.nu.ˈar/",
+      "defs": [{ "gloss": "to continue", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 133]"
+    },
+    {
+      "id": "poter",
+      "headword": "poter",
+      "pos": "v",
+      "pron": "/po.ˈter/",
+      "defs": [{ "gloss": "can/to be able", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 35]"
+    },
+    {
+      "id": "deber",
+      "headword": "deber",
+      "pos": "v",
+      "pron": "/de.ˈber/",
+      "defs": [{ "gloss": "must/to have to", "notes": "action" }],
+      "tags": ["action", "extra"],
+      "src_id": "[cite: 216]"
+    },
+    {
+      "id": "auro",
+      "headword": "auro",
+      "pos": "n",
+      "pron": "/ˈau.ro/",
+      "defs": [{ "gloss": "gold", "notes": "material" }],
+      "tags": ["material", "extra"],
+      "src_id": "[cite: 515]"
+    },
+    {
+      "id": "argento",
+      "headword": "argento",
+      "pos": "n",
+      "pron": "/ar.ˈjen.to/",
+      "defs": [{ "gloss": "silver", "notes": "material" }],
+      "tags": ["material", "extra"],
+      "src_id": "[cite: 507]"
+    },
+    {
+      "id": "ferro",
+      "headword": "ferro",
+      "pos": "n",
+      "pron": "/ˈfer.ro/",
+      "defs": [{ "gloss": "iron", "notes": "material" }],
+      "tags": ["material", "extra"],
+      "src_id": "[cite: 531]"
+    },
+    {
+      "id": "vitro",
+      "headword": "vitro",
+      "pos": "n",
+      "pron": "/ˈvi.tro/",
+      "defs": [{ "gloss": "glass", "notes": "material" }],
+      "tags": ["material", "extra"],
+      "src_id": "[cite: 522]"
+    },
+    {
+      "id": "ligno",
+      "headword": "ligno",
+      "pos": "n",
+      "pron": "/ˈlig.no/",
+      "defs": [{ "gloss": "wood", "notes": "material" }],
+      "tags": ["material", "extra"],
+      "src_id": "[cite: 534]"
+    },
+    {
+      "id": "mesmo",
+      "headword": "mesmo",
+      "pos": "pron",
+      "pron": "/ˈmes.mo/",
+      "defs": [{ "gloss": "same/self", "notes": "pronoun" }],
+      "tags": ["basic", "extra"],
+      "src_id": "[cite: 80]"
+    },
+    {
+      "id": "tal",
+      "headword": "tal",
+      "pos": "pron",
+      "pron": "/tal/",
+      "defs": [{ "gloss": "such", "notes": "pronoun" }],
+      "tags": ["basic", "extra"],
+      "src_id": "[cite: 34]"
+    },
+    {
+      "id": "tanto",
+      "headword": "tanto",
+      "pos": "adv",
+      "pron": "/ˈtan.to/",
+      "defs": [{ "gloss": "so much", "notes": "quantifier" }],
+      "tags": ["quantity", "extra"],
+      "src_id": "[cite: 462]"
+    },
+    {
+      "id": "quanto",
+      "headword": "quanto",
+      "pos": "adv",
+      "pron": "/ˈkwan.to/",
+      "defs": [{ "gloss": "how much", "notes": "quantifier" }],
+      "tags": ["quantity", "extra"],
+      "src_id": "[cite: 67]"
+    },
+    {
+      "id": "dunque",
+      "headword": "dunque",
+      "pos": "conj",
+      "pron": "/ˈdun.kwe/",
+      "defs": [{ "gloss": "therefore", "notes": "conjunction" }],
+      "tags": ["logic", "extra"],
+      "src_id": "[cite: 34]"
+    },
+    {
+      "id": "tamen",
+      "headword": "tamen",
+      "pos": "conj",
+      "pron": "/ˈta.men/",
+      "defs": [{ "gloss": "however", "notes": "conjunction" }],
+      "tags": ["logic", "extra"],
+      "src_id": "[cite: 29]"
+    },
+    {
+      "id": "anque",
+      "headword": "anque",
+      "pos": "adv",
+      "pron": "/ˈan.kwe/",
+      "defs": [{ "gloss": "also", "notes": "logic" }],
+      "tags": ["logic", "extra"],
+      "src_id": "[cite: 648]"
+    },
+    {
+      "id": "ancora",
+      "headword": "ancora",
+      "pos": "adv",
+      "pron": "/an.ˈco.ra/",
+      "defs": [{ "gloss": "still/yet", "notes": "time" }],
+      "tags": ["time", "extra"],
+      "src_id": "[cite: 26]"
+    },
+    {
+      "id": "ja",
+      "headword": "ja",
+      "pos": "adv",
+      "pron": "/ja/",
+      "defs": [{ "gloss": "already", "notes": "time" }],
+      "tags": ["time", "extra"],
+      "src_id": "[cite: 28]"
+    },
+    {
+      "id": "ora",
+      "headword": "ora",
+      "pos": "adv",
+      "pron": "/ˈo.ra/",
+      "defs": [{ "gloss": "now", "notes": "time" }],
+      "tags": ["time", "extra"],
+      "src_id": "[cite: 82]"
+    },
+    {
+      "id": "apos",
+      "headword": "após",
+      "pos": "prep",
+      "pron": "/a.ˈpos/",
+      "defs": [{ "gloss": "after", "notes": "time" }],
+      "tags": ["time", "extra"],
+      "src_id": "[cite: 40]"
+    },
+    {
+      "id": "depois",
+      "headword": "depois",
+      "pos": "adv",
+      "pron": "/de.ˈpo.is/",
+      "defs": [{ "gloss": "afterwards", "notes": "time" }],
+      "tags": ["time", "extra"],
+      "src_id": "[cite: 433]"
+    },
+    {
+      "id": "ante",
+      "headword": "ante",
+      "pos": "prep",
+      "pron": "/ˈan.te/",
+      "defs": [{ "gloss": "before", "notes": "time/place" }],
+      "tags": ["time", "extra"],
+      "src_id": "[cite: 616]"
+    },
+    {
+      "id": "contra",
+      "headword": "contra",
+      "pos": "prep",
+      "pron": "/ˈcon.tra/",
+      "defs": [{ "gloss": "against", "notes": "logic" }],
+      "tags": ["logic", "extra"],
+      "src_id": "[cite: 33]"
+    },
+    {
+      "id": "sine",
+      "headword": "sine",
+      "pos": "prep",
+      "pron": "/ˈsi.ne/",
+      "defs": [{ "gloss": "without", "notes": "logic" }],
+      "tags": ["logic", "extra"],
+      "src_id": "[cite: 47]"
+    },
+    {
+      "id": "atraves",
+      "headword": "através",
+      "pos": "prep",
+      "pron": "/a.tra.ˈves/",
+      "defs": [{ "gloss": "through/across", "notes": "place" }],
+      "tags": ["place", "extra"],
+      "src_id": "[cite: 476]"
+    },
+    {
+      "id": "numero",
+      "headword": "número",
+      "pos": "n",
+      "pron": "/ˈnu.me.ro/",
+      "defs": [{ "gloss": "number", "notes": "math" }],
+      "tags": ["math", "extra"],
+      "src_id": "[cite: 26]"
+    },
+    {
+      "id": "parte",
+      "headword": "parte",
+      "pos": "n",
+      "pron": "/ˈpar.te/",
+      "defs": [{ "gloss": "part", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 28]"
+    },
+    {
+      "id": "exemplo",
+      "headword": "exemplo",
+      "pos": "n",
+      "pron": "/ek.ˈsem.plo/",
+      "defs": [{ "gloss": "example", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 92]"
+    },
+    {
+      "id": "forma",
+      "headword": "forma",
+      "pos": "n",
+      "pron": "/ˈfor.ma/",
+      "defs": [{ "gloss": "form/shape", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 526]"
+    },
+    {
+      "id": "sistema",
+      "headword": "sistema",
+      "pos": "n",
+      "pron": "/sis.ˈte.ma/",
+      "defs": [{ "gloss": "system", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 34]"
+    },
+    {
+      "id": "metodo",
+      "headword": "método",
+      "pos": "n",
+      "pron": "/ˈme.to.do/",
+      "defs": [{ "gloss": "method", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 33]"
+    },
+    {
+      "id": "facto",
+      "headword": "facto",
+      "pos": "n",
+      "pron": "/ˈfak.to/",
+      "defs": [{ "gloss": "fact", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 65]"
+    },
+    {
+      "id": "causa",
+      "headword": "causa",
+      "pos": "n",
+      "pron": "/ˈkau.za/",
+      "defs": [{ "gloss": "cause", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 46]"
+    },
+    {
+      "id": "idea",
+      "headword": "idea",
+      "pos": "n",
+      "pron": "/i.ˈde.a/",
+      "defs": [{ "gloss": "idea", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 185]"
+    },
+    {
+      "id": "mente",
+      "headword": "mente",
+      "pos": "n",
+      "pron": "/ˈmen.te/",
+      "defs": [{ "gloss": "mind", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 94]"
+    },
+    {
+      "id": "spirito",
+      "headword": "spírito",
+      "pos": "n",
+      "pron": "/ˈspi.ri.to/",
+      "defs": [{ "gloss": "spirit", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 46]"
+    },
+    {
+      "id": "anima",
+      "headword": "ánima",
+      "pos": "n",
+      "pron": "/ˈa.ni.ma/",
+      "defs": [{ "gloss": "soul", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 334]"
+    },
+    {
+      "id": "deo",
+      "headword": "deo",
+      "pos": "n",
+      "pron": "/ˈde.o/",
+      "defs": [{ "gloss": "god", "notes": "religion" }],
+      "tags": ["religion", "extra"],
+      "src_id": "[cite: 531]"
+    },
+    {
+      "id": "social",
+      "headword": "social",
+      "pos": "adj",
+      "pron": "/so.ˈsjal/",
+      "defs": [{ "gloss": "social", "notes": "society" }],
+      "tags": ["society", "extra"],
+      "src_id": "[cite: 280]"
+    },
+    {
+      "id": "color",
+      "headword": "color",
+      "pos": "n",
+      "pron": "/ko.ˈlor/",
+      "defs": [{ "gloss": "color", "notes": "vision" }],
+      "tags": ["vision", "extra"],
+      "src_id": "[cite: 515]"
+    },
+    {
+      "id": "son",
+      "headword": "son",
+      "pos": "n",
+      "pron": "/son/",
+      "defs": [{ "gloss": "sound", "notes": "hearing" }],
+      "tags": ["hearing", "extra"],
+      "src_id": "[cite: 520]"
+    },
+    {
+      "id": "crime",
+      "headword": "crime",
+      "pos": "n",
+      "pron": "/ˈkri.me/",
+      "defs": [{ "gloss": "crime", "notes": "law" }],
+      "tags": ["law", "extra"],
+      "src_id": "[cite: 682]"
+    },
+    {
+      "id": "avion",
+      "headword": "avion",
+      "pos": "n",
+      "pron": "/a.ˈvjon/",
+      "defs": [{ "gloss": "airplane", "notes": "transport" }],
+      "tags": ["transport", "extra"],
+      "src_id": "[cite: 855]"
+    },
+    {
+      "id": "viage",
+      "headword": "viage",
+      "pos": "n",
+      "pron": "/vi.ˈa.je/",
+      "defs": [{ "gloss": "trip", "notes": "transport" }],
+      "tags": ["transport", "extra"],
+      "src_id": "[cite: 769]"
+    },
+    {
+      "id": "somnio",
+      "headword": "sómnio",
+      "pos": "n",
+      "pron": "/ˈsom.ni.o/",
+      "defs": [{ "gloss": "dream", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 527]"
+    },
+    {
+      "id": "luce",
+      "headword": "luce",
+      "pos": "n",
+      "pron": "/ˈlu.se/",
+      "defs": [{ "gloss": "light", "notes": "vision" }],
+      "tags": ["vision", "extra"],
+      "src_id": "[cite: 520]"
+    },
+    {
+      "id": "circulo",
+      "headword": "círculo",
+      "pos": "n",
+      "pron": "/ˈsir.ku.lo/",
+      "defs": [{ "gloss": "circle", "notes": "shape" }],
+      "tags": ["shape", "extra"],
+      "src_id": "[cite: 513]"
+    },
+    {
+      "id": "linea",
+      "headword": "línea",
+      "pos": "n",
+      "pron": "/ˈli.ne.a/",
+      "defs": [{ "gloss": "line", "notes": "shape" }],
+      "tags": ["shape", "extra"],
+      "src_id": "[cite: 486]"
+    },
+    {
+      "id": "puncto",
+      "headword": "puncto",
+      "pos": "n",
+      "pron": "/ˈpunk.to/",
+      "defs": [{ "gloss": "point", "notes": "shape" }],
+      "tags": ["shape", "extra"],
+      "src_id": "[cite: 90]"
+    },
+    {
+      "id": "superficie",
+      "headword": "superfície",
+      "pos": "n",
+      "pron": "/su.per.ˈfi.si.e/",
+      "defs": [{ "gloss": "surface", "notes": "shape" }],
+      "tags": ["shape", "extra"],
+      "src_id": "[cite: 420]"
+    },
+    {
+      "id": "mesura",
+      "headword": "mesura",
+      "pos": "n",
+      "pron": "/me.ˈzu.ra/",
+      "defs": [{ "gloss": "measure", "notes": "measure" }],
+      "tags": ["measure", "extra"],
+      "src_id": "[cite: 526]"
+    },
+    {
+      "id": "metro",
+      "headword": "metro",
+      "pos": "n",
+      "pron": "/ˈme.tro/",
+      "defs": [{ "gloss": "meter", "notes": "measure" }],
+      "tags": ["measure", "extra"],
+      "src_id": "[cite: 526]"
+    },
+    {
+      "id": "sud",
+      "headword": "sud",
+      "pos": "n",
+      "pron": "/sud/",
+      "defs": [{ "gloss": "South", "notes": "direction" }],
+      "tags": ["direction", "extra"],
+      "src_id": "[cite: 509]"
+    },
+    {
+      "id": "medio",
+      "headword": "médio",
+      "pos": "n",
+      "pron": "/ˈme.di.o/",
+      "defs": [{ "gloss": "middle", "notes": "location" }],
+      "tags": ["location", "extra"],
+      "src_id": "[cite: 132]"
+    },
+    {
+      "id": "fine",
+      "headword": "fine",
+      "pos": "n",
+      "pron": "/ˈfi.ne/",
+      "defs": [{ "gloss": "end", "notes": "time/location" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 5]"
+    },
+    {
+      "id": "inicio",
+      "headword": "início",
+      "pos": "n",
+      "pron": "/i.ˈni.si.o/",
+      "defs": [{ "gloss": "beginning", "notes": "time" }],
+      "tags": ["time", "extra"],
+      "src_id": "[cite: 122]"
+    },
+    {
+      "id": "regula",
+      "headword": "régula",
+      "pos": "n",
+      "pron": "/ˈre.gu.la/",
+      "defs": [{ "gloss": "rule", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 53]"
+    },
+    {
+      "id": "importante",
+      "headword": "importante",
+      "pos": "adj",
+      "pron": "/im.por.ˈtan.te/",
+      "defs": [{ "gloss": "important", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 80]"
+    },
+    {
+      "id": "grave",
+      "headword": "grave",
+      "pos": "adj",
+      "pron": "/ˈgra.ve/",
+      "defs": [{ "gloss": "serious/heavy", "notes": "quality" }],
+      "tags": ["quality", "extra"],
+      "src_id": "[cite: 42]"
+    },
+    {
+      "id": "mole",
+      "headword": "mole",
+      "pos": "adj",
+      "pron": "/ˈmo.le/",
+      "defs": [{ "gloss": "soft", "notes": "touch" }],
+      "tags": ["touch", "extra"],
+      "src_id": "[cite: 525]"
+    },
+    {
+      "id": "duro",
+      "headword": "duro",
+      "pos": "adj",
+      "pron": "/ˈdu.ro/",
+      "defs": [{ "gloss": "hard", "notes": "touch" }],
+      "tags": ["touch", "extra"],
+      "src_id": "[cite: 382]"
+    },
+    {
+      "id": "malato",
+      "headword": "malato",
+      "pos": "adj",
+      "pron": "/ma.ˈla.to/",
+      "defs": [{ "gloss": "sick", "notes": "health" }],
+      "tags": ["health", "extra"],
+      "src_id": "[cite: 450]"
+    },
+    {
+      "id": "medicina",
+      "headword": "medicina",
+      "pos": "n",
+      "pron": "/me.di.ˈsi.na/",
+      "defs": [{ "gloss": "medicine", "notes": "health" }],
+      "tags": ["health", "extra"],
+      "src_id": "[cite: 793]"
+    },
+    {
+      "id": "dolor",
+      "headword": "dolor",
+      "pos": "n",
+      "pron": "/do.ˈlor/",
+      "defs": [{ "gloss": "pain", "notes": "health" }],
+      "tags": ["health", "extra"],
+      "src_id": "[cite: 507]"
+    },
+    {
+      "id": "timor",
+      "headword": "timor",
+      "pos": "n",
+      "pron": "/ti.ˈmor/",
+      "defs": [{ "gloss": "fear", "notes": "emotion" }],
+      "tags": ["emotion", "extra"],
+      "src_id": "[cite: 90]"
+    },
+    {
+      "id": "corage",
+      "headword": "corage",
+      "pos": "n",
+      "pron": "/ko.ˈra.je/",
+      "defs": [{ "gloss": "courage", "notes": "emotion" }],
+      "tags": ["emotion", "extra"],
+      "src_id": "[cite: 169]"
+    },
+    {
+      "id": "dubita",
+      "headword": "dúbita",
+      "pos": "n",
+      "pron": "/ˈdu.bi.ta/",
+      "defs": [{ "gloss": "doubt", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 70]"
+    },
+    {
+      "id": "gloria",
+      "headword": "glória",
+      "pos": "n",
+      "pron": "/ˈglo.ri.a/",
+      "defs": [{ "gloss": "glory", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 624]"
+    },
+    {
+      "id": "perdon",
+      "headword": "perdon",
+      "pos": "n",
+      "pron": "/per.ˈdon/",
+      "defs": [{ "gloss": "pardon", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 467]"
+    },
+    {
+      "id": "gratia",
+      "headword": "grácia",
+      "pos": "n",
+      "pron": "/ˈgra.si.a/",
+      "defs": [{ "gloss": "grace", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 624]"
+    },
+    {
+      "id": "auxilio",
+      "headword": "auxílio",
+      "pos": "n",
+      "pron": "/auk.ˈsi.li.o/",
+      "defs": [{ "gloss": "help", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 797]"
+    },
+    {
+      "id": "favor",
+      "headword": "favor",
+      "pos": "n",
+      "pron": "/fa.ˈvor/",
+      "defs": [{ "gloss": "favor", "notes": "abstract" }],
+      "tags": ["abstract", "extra"],
+      "src_id": "[cite: 471]"
     }
   ]
 }
