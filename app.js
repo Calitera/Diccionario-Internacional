@@ -6,10 +6,32 @@ function norm(s) {
   return (s || "").toString().toLowerCase().trim();
 }
 
+function normalizeForSearch(str) {
+  return (str || "")
+    .toString()
+    .normalize("NFD")                 // split letters + diacritics
+    .replace(/[\u0300-\u036f]/g, "")  // remove diacritics
+    .toLowerCase()
+    .trim();
+}
+
 function entryToSearchBlob(e) {
-  const defs = (e.defs || []).map(d => d.gloss).join(" ");
+  const defs = (e.defs || []).map(d => {
+    if (typeof d.gloss === "string") return d.gloss;
+    if (typeof d.gloss === "object") return Object.values(d.gloss).join(" ");
+    return "";
+  }).join(" ");
+
   const tags = (e.tags || []).join(" ");
-  return norm([e.headword, e.id, e.pos, e.pron, defs, tags].join(" "));
+
+  return normalizeForSearch([
+    e.headword,
+    e.id,
+    e.pos,
+    e.pron,
+    defs,
+    tags
+  ].join(" "));
 }
 
 function renderResults(entries) {
@@ -64,12 +86,10 @@ function renderEntry(e) {
 }
 
 function doSearch() {
-  const q = norm(el("q").value);
-  const all = LEX.entries || [];
-  if (!q) return renderResults(all);
-
+  const q = normalizeForSearch(el("q").value);
   const tokens = q.split(/\s+/).filter(Boolean);
-  const out = all.filter(e => {
+
+  const out = LEX.entries.filter(e => {
     const blob = entryToSearchBlob(e);
     return tokens.every(t => blob.includes(t));
   });
