@@ -243,3 +243,8 @@ input:focus{
   background: rgba(0,0,0,0.12);
   padding: 6px;
 }
+
+#heritageTop,
+#heritageLine{
+  white-space: pre-line;
+}
