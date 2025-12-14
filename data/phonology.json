@@ -1,0 +1,222 @@
+[
+  {
+    "grapheme": "A",
+    "context": "All contexts (Vowel)",
+    "ipa": "/a/"
+  },
+  {
+    "grapheme": "B",
+    "context": "All contexts",
+    "ipa": "/b/"
+  },
+  {
+    "grapheme": "C",
+    "context": "Before a, o, u, consonant, or final (Hard C)",
+    "ipa": "/k/"
+  },
+  {
+    "grapheme": "C",
+    "context": "Before e, i (Soft C, except after s)",
+    "ipa": "/s̺/"
+  },
+  {
+    "grapheme": "Ç",
+    "context": "All contexts",
+    "ipa": "/s̺/"
+  },
+  {
+    "grapheme": "CH",
+    "context": "Digraph",
+    "ipa": "/tɕ/"
+  },
+  {
+    "grapheme": "D",
+    "context": "All contexts",
+    "ipa": "/d/"
+  },
+  {
+    "grapheme": "E",
+    "context": "All contexts (Vowel)",
+    "ipa": "/e/"
+  },
+  {
+    "grapheme": "F",
+    "context": "All contexts",
+    "ipa": "/f/"
+  },
+  {
+    "grapheme": "G",
+    "context": "Before e, i (Soft G/Fricative J)",
+    "ipa": "/ʒ/"
+  },
+  {
+    "grapheme": "G",
+    "context": "Before a, o, u, consonant, or final (Hard G)",
+    "ipa": "/g/"
+  },
+  {
+    "grapheme": "GÜ",
+    "context": "Digraph, Before e, i (u is pronounced)",
+    "ipa": "/gw/"
+  },
+  {
+    "grapheme": "GU",
+    "context": "Digraph, Before e, i (for /g/)",
+    "ipa": "/g/"
+  },
+  {
+    "grapheme": "H",
+    "context": "All contexts (Aspirated)",
+    "ipa": "/h/"
+  },
+  {
+    "grapheme": "I",
+    "context": "All contexts (Vowel)",
+    "ipa": "/i/"
+  },
+  {
+    "grapheme": "J",
+    "context": "Before e, i, or after written d (Affricate J)",
+    "ipa": "/dʒ/"
+  },
+  {
+    "grapheme": "J",
+    "context": "Before a, o, u (not after d) (Fricative J)",
+    "ipa": "/ʒ/"
+  },
+  {
+    "grapheme": "L",
+    "context": "All contexts",
+    "ipa": "/l/"
+  },
+  {
+    "grapheme": "M",
+    "context": "All contexts",
+    "ipa": "/m/"
+  },
+  {
+    "grapheme": "N",
+    "context": "All contexts except before g, c, q",
+    "ipa": "/n/"
+  },
+  {
+    "grapheme": "N",
+    "context": "Before g, c, q (Velar nasal/Anasalato)",
+    "ipa": "/ŋ/"
+  },
+  {
+    "grapheme": "O",
+    "context": "All contexts (Vowel)",
+    "ipa": "/o/"
+  },
+  {
+    "grapheme": "P",
+    "context": "All contexts",
+    "ipa": "/p/"
+  },
+  {
+    "grapheme": "Q",
+    "context": "As part of QU before a, o",
+    "ipa": "/k/"
+  },
+  {
+    "grapheme": "Q",
+    "context": "As part of QU before e, i",
+    "ipa": "/k/"
+  },
+  {
+    "grapheme": "Q",
+    "context": "As part of QÜ before e, i",
+    "ipa": "/k/"
+  },
+  {
+    "grapheme": "QÜ",
+    "context": "Digraph, Before e, i (u is pronounced)",
+    "ipa": "/kwe/, /kwi/"
+  },
+  {
+    "grapheme": "QU",
+    "context": "Digraph, Before a, o (excluding u sound)",
+    "ipa": "/kwa/, /kwo/"
+  },
+  {
+    "grapheme": "QU",
+    "context": "Digraph, Before e, i (u is silent)",
+    "ipa": "/ke/, /ki/"
+  },
+  {
+    "grapheme": "R",
+    "context": "Rolled (initial, after l, n)",
+    "ipa": "/r/"
+  },
+  {
+    "grapheme": "R",
+    "context": "Non-rolled (soft, other contexts)",
+    "ipa": "/ɾ/"
+  },
+  {
+    "grapheme": "RR",
+    "context": "Digraph, Intervocalic",
+    "ipa": "/r/"
+  },
+  {
+    "grapheme": "S",
+    "context": "Voiceless (non-intervocalic)",
+    "ipa": "/s/"
+  },
+  {
+    "grapheme": "S",
+    "context": "Soft S (sh-sound) [e.g., after vowel/inter-consonantal]",
+    "ipa": "/s̠/"
+  },
+  {
+    "grapheme": "S",
+    "context": "Voiced (intervocalic, liaison)",
+    "ipa": "/z/"
+  },
+  {
+    "grapheme": "S",
+    "context": "Initial before ce/ci (Silent)",
+    "ipa": "(Silent)"
+  },
+  {
+    "grapheme": "SC",
+    "context": "Digraph, Before e, i",
+    "ipa": "/s/"
+  },
+  {
+    "grapheme": "SS",
+    "context": "Digraph, Intervocalic",
+    "ipa": "/s/"
+  },
+  {
+    "grapheme": "T",
+    "context": "All contexts",
+    "ipa": "/t/"
+  },
+  {
+    "grapheme": "U",
+    "context": "All contexts (Vowel)",
+    "ipa": "/u/"
+  },
+  {
+    "grapheme": "V",
+    "context": "All contexts",
+    "ipa": "/v/"
+  },
+  {
+    "grapheme": "X",
+    "context": "Initial before vowel (Simple Sh-sound)",
+    "ipa": "/ʃ/"
+  },
+  {
+    "grapheme": "X",
+    "context": "Medial/Final",
+    "ipa": "/ks/"
+  },
+  {
+    "grapheme": "Z",
+    "context": "All contexts",
+    "ipa": "/z/"
+  }
+]
