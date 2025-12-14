@@ -468,9 +468,16 @@ function doSearch() {
   if (MODE === "browse") {
     let out = all.filter(matchesFilters);
 
-    if (BROWSE_LETTER) {
-      out = out.filter(e => normalizeForSearch(e.headword).startsWith(BROWSE_LETTER));
-    }
+  if (BROWSE_LETTER) {
+    out = out.filter(e => {
+      const hw = (e.headword || "").trim();
+      if (!hw) return false;
+
+      const first = hw[0].toLowerCase();
+      const key = first === "ç" ? "ç" : normalizeForSearch(first)[0];
+      return key === BROWSE_LETTER;
+    });
+  }
 
     out.sort((a,b) => normalizeForSearch(a.headword).localeCompare(normalizeForSearch(b.headword)));
     renderResults(out);
