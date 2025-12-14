@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academia Caliterana de lo Internacional</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="brand">
+        <img class="logo" src="assets/logo.png" alt="Academia logo" />
+        <div>
+          <h1>Academia Caliterana de lo Internacional</h1>
+          <p class="subtitle">Reference, standardization, and modern usage of <strong>Lo Internacional</strong>.</p>
+          <p class="subtitle muted" id="heritageTop"></p>
+        </div>
+      </div>
+
+      <nav class="topnav">
+        <a class="navlink active" href="./index.html">Academy</a>
+        <a class="navlink" href="./dictionary.html">Dictionary</a>
+        <a class="navlink" href="./phonology.html">Letters & Pronunciation</a>
+      </nav>
+
+      <section class="home-grid">
+        <div class="home-card">
+          <h2>Dictionary</h2>
+          <p class="meta">Search the lexicon by headword, meaning, tags, and part of speech.</p>
+          <a class="btn" href="./dictionary.html">Open Dictionary</a>
+        </div>
+
+        <div class="home-card">
+          <h2>Letters & Pronunciation</h2>
+          <p class="meta">Orthography rules and IPA for Lo Internacional (including digraphs).</p>
+          <a class="btn" href="./phonology.html">Open Pronunciation Guide</a>
+        </div>
+
+        <div class="home-card">
+          <h2>About</h2>
+          <p class="meta">
+            The Academy preserves a classical source tradition and supports contemporary usage in culture, learning, and publishing.
+          </p>
+          <div class="meta" id="homeMeta"></div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Mission</h2>
+        <div class="meta">Academy overview</div>
+      </div>
+      <div class="entry">
+        <p>
+          We maintain a living reference of <strong>Lo Internacional</strong>, drawing from historical description while documenting
+          modern usage. Our goal is consistency, accessibility, and a practical standard for learners and writers.
+        </p>
+
+        <div class="line"></div>
+
+        <div class="label">Heritage & modern usage</div>
+        <p class="meta" id="heritageLine"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <div class="footer-left">
+      <div><strong>Academia Caliterana de lo Internacional</strong></div>
+      <div class="muted" id="footerMeta"></div>
+    </div>
+  </footer>
+
+  <script>
+    async function loadMeta() {
+      const res = await fetch("./data/lexicon.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("Could not load lexicon metadata.");
+      const LEX = await res.json();
+
+      const heritage =
+`Based on ${LEX.meta?.source || "Gramática Internacional (Campos Lima, 1948)"}; used today as a part of our culture.
+Basato in ${LEX.meta?.source || "Gramática Internacional (Campos Lima, 1948)"}; usato hodie como una parte de la nostra cultura.`;
+
+      document.getElementById("heritageTop").textContent = heritage;
+      document.getElementById("heritageLine").textContent = heritage;
+      document.getElementById("homeMeta").textContent =
+        `${LEX.entries?.length || 0} entries • ${LEX.meta?.type || ""} • v${LEX.meta?.version || ""}`;
+      document.getElementById("footerMeta").textContent =
+        `${LEX.meta?.lang || "Lo Internacional"} • ${LEX.meta?.type || ""} • v${LEX.meta?.version || ""}`;
+    }
+
+    loadMeta().catch(err => {
+      document.getElementById("heritageTop").textContent = "Metadata failed to load.";
+      document.getElementById("footerMeta").textContent = String(err?.message || err);
+    });
+  </script>
+</body>
+</html>
