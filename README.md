@@ -140,6 +140,7 @@ This is a static website that requires no build process. Simply:
 The site is designed to be deployed as a static website. It's currently hosted via GitHub Pages at [lingua.calitera.org](https://lingua.calitera.org).
 
 To deploy to GitHub Pages:
+
 1. Push changes to the repository
 2. GitHub Pages will automatically serve from the default branch
 3. The `CNAME` file configures the custom domain
