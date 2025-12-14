@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Academia Caliterana pro la Língua</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="hero">
     <div class="wrap hero-inner">
@@ -40,9 +42,11 @@
         <div class="home-card">
           <h2>Our Mission / Nostra Mission</h2>
           <p class="meta">
-            Our mission is to systemize, modernize and promote the Internacional language. We base our linguistic work on the norms dictated by João Evangelista Campos Lima, the language's creator.
+            Our mission is to systemize, modernize and promote the Internacional language. We base our linguistic work
+            on the norms dictated by João Evangelista Campos Lima, the language's creator.
             <br>
-            La nostra mission è sistematizar, modernizar e promover la língua Internacional. Basamos la nostra labor linguistica súper las normas dictatas per João Evangelista Campos Lima.
+            La nostra mission è sistematizar, modernizar e promover la língua Internacional. Basamos la nostra labor
+            linguistica súper las normas dictatas per João Evangelista Campos Lima.
           </p>
         </div>
       </section>
@@ -55,17 +59,37 @@
         <h2>Mission</h2>
       </div>
       <div class="entry">
-        <p>
-          We maintain a living reference of <strong>Lo Internacional</strong>, drawing from historical description while documenting
-          modern usage. Our goal is consistency, accessibility, and a practical standard for learners and writers.
-          OBJECTIVOS FUNDAMENTALES
-
-          Naturalitate Integral: Garantir que Lo Internacional ressemle a una vera língua natural, repudiando la artificialitate e la mutilacion de vocábulos .
-
-          Síntese Neo-Latina: Unificar las formas de las línguas románicas e de lo latino in uno sistema homogéneo e coerente.
-
-          Regularitate Lógica: Obtener la máxima regularitate possíbil, ma sempre subordinata a la naturalitate
+<div class="language-section">
+    <div class="element">
+        <h3>Systematization / Sistematizacion</h3>
+        <p class="english">
+            We use Campos Lima's system as our basis and expand the vocabulary upon it, loyal to his original criteria.
         </p>
+        <p class="lo-internacional">
+            Nos usamos lo sistema formato per Campos Lima como nostra base e expandimos lo vocabulário súper ela, leales a lo suo critério original.
+        </p>
+    </div>
+
+    <div class="element">
+        <h3>Modernization / Modernizacion</h3>
+        <p class="english">
+            We adapt the language to the requirements of contemporary science and technology, strictly maintaining its etymological roots and Latin character.
+        </p>
+        <p class="lo-internacional">
+            Nos adaptamos la língua a las exigéncias de la sciéncia e tecnologia contemporáneas, mantenendo strictamente las suas radices etimológicas e lo carácter latino.
+        </p>
+    </div>
+
+    <div class="element">
+        <h3>Promotion / Promocion</h3>
+        <p class="english">
+            We propagate the language through education and literary production to demonstrate its fluency and absolute viability as a national and global medium.
+        </p>
+        <p class="lo-internacional">
+            Nos propagamos la língua através de la educacion e produccion literária pro demonstrar sua fluéncia e absoluta viabilitate como médio nacional e global.
+        </p>
+    </div>
+</div>
       </div>
     </section>
   </main>
@@ -84,15 +108,14 @@
       const LEX = await res.json();
 
       const heritage =
-`Based on ${LEX.meta?.source || "Gramática Internacional (Campos Lima, 1948)"}; used today as a part of our culture.
+        `Based on ${LEX.meta?.source || "Gramática Internacional (Campos Lima, 1948)"}; used today as a part of our culture.
 Basato in ${LEX.meta?.source || "Gramática Internacional (Campos Lima, 1948)"}; usato hodie como una parte de la nostra cultura.`;
 
       document.getElementById("heritageTop").textContent = heritage;
       document.getElementById("heritageLine").textContent = heritage;
       document.getElementById("homeMeta").textContent =
         `${LEX.entries?.length || 0} entries • ${LEX.meta?.type || ""} • v${LEX.meta?.version || ""}`;
-      document.getElementById("footerMeta").textContent =
-        `${LEX.meta?.lang || "Lo Internacional"} • ${LEX.meta?.type || ""} • v${LEX.meta?.version || ""}`;
+      document.getElementById("footerMeta").textContent = heritage;
     }
 
     loadMeta().catch(err => {
@@ -101,4 +124,5 @@ Basato in ${LEX.meta?.source || "Gramática Internacional (Campos Lima, 1948)"};
     });
   </script>
 </body>
+
 </html>
