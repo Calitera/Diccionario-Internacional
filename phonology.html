@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lo Internacional • Letters & Pronunciation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="brand">
+        <a class="brandlink" href="./index.html" title="Back to dictionary">
+          <img class="logo" src="assets/logo.png" alt="Academia logo" />
+        </a>
+        <div>
+          <h1>Letters & Pronunciation</h1>
+          <p class="subtitle">Orthography rules (Gramática Internacional tradition, modern usage)</p>
+          <p class="subtitle muted">By <strong>Academia Caliterana de lo Internacional</strong></p>
+        </div>
+      </div>
+
+      <nav class="topnav">
+        <a class="navlink" href="./index.html">Dictionary</a>
+        <a class="navlink active" href="./phonology.html">Letters & Pronunciation</a>
+      </nav>
+
+      <div class="searchbar">
+        <input id="q" placeholder="Search: grapheme, IPA, context…" autocomplete="off" />
+        <button id="clear" class="btn secondary" type="button">Clear</button>
+      </div>
+
+      <div class="filters">
+        <div class="filter">
+          <span class="filter-label">Group</span>
+          <select id="groupFilter">
+            <option value="">All</option>
+            <option value="single">Single letters</option>
+            <option value="digraph">Digraphs</option>
+            <option value="vowel">Vowels</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Rules</h2>
+        <div class="meta" id="count"></div>
+      </div>
+
+      <div class="tablewrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Grapheme</th>
+              <th>Context</th>
+              <th>IPA</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+
+      <div class="panel-foot meta">
+        Notes: “Digraph” means a multi-letter grapheme (e.g., <strong>CH</strong>, <strong>RR</strong>, <strong>QU</strong>). “(Silent)” means not pronounced in that context.
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <div class="footer-left">
+      <div><strong>Academia Caliterana de lo Internacional</strong></div>
+      <div class="muted">Orthography & IPA reference</div>
+    </div>
+  </footer>
+
+  <script src="phonology.js"></script>
+</body>
+</html>
