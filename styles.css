@@ -505,3 +505,65 @@ input:focus {
   opacity: 0.45;
   cursor: default;
 }
+
+/* Top nav */
+.topnav{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.navlink{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.14);
+  color: rgba(255,255,255,0.86);
+  text-decoration:none;
+}
+.navlink:hover{ background: rgba(255,255,255,0.10); }
+.navlink.active{
+  border-color: rgba(242,201,76,0.55);
+  box-shadow: 0 0 0 4px rgba(242,201,76,0.12);
+}
+
+/* Table */
+.tablewrap{ overflow:auto; }
+.table{
+  width:100%;
+  border-collapse: collapse;
+}
+.table thead th{
+  text-align:left;
+  font-size: 12.5px;
+  letter-spacing: .2px;
+  color: rgba(255,255,255,0.72);
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+.table tbody td{
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  vertical-align: top;
+}
+.table tbody tr:hover{
+  background: rgba(255,255,255,0.05);
+}
+
+.g{
+  display:inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.16);
+  font-weight: 700;
+}
+.ipa{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: rgba(242,201,76,0.92);
+  font-weight: 600;
+}
+.panel-foot{ padding: 12px 14px 14px; }
+.brandlink{ display:inline-flex; }
